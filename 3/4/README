@@ -1,0 +1,37 @@
+sam14015@login1:~/task/3/2> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2500123      main MPI_Hell sam14015 PD       0:00      2 (Priority)
+sam14015@login1:~/task/3/2> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2500123      main MPI_Hell sam14015  R       0:05      2 s05r2b[64,66]
+sam14015@login1:~/task/3/2> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2500123      main MPI_Hell sam14015 CG       0:10      2 s05r2b[64,66]
+sam14015@login1:~/task/3/2> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2500123      main MPI_Hell sam14015 CG       0:10      1 s05r2b66
+sam14015@login1:~/task/3/2> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+
+Check the output of the execution. What happened with the order of outputs?
+
+% cat output*.out
+I am 1 of 16
+I am 2 of 16
+I am 5 of 16
+I am 6 of 16
+I am 7 of 16
+I am 0 of 16
+I am 3 of 16
+I am 4 of 16
+I am 10 of 16
+I am 9 of 16
+I am 8 of 16
+I am 15 of 16
+I am 12 of 16
+I am 11 of 16
+I am 14 of 16
+I am 13 of 16
+
+
+It's not sorted.

@@ -1,0 +1,2 @@
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2449106      main hello wo sam14015 PD       0:00      1 (Priority)

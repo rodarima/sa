@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --job-name="hello world"
+#SBATCH --workdir=.
+#SBATCH --output=output_%J.out
+#SBATCH --error=output_%J.err
+#SBATCH --ntasks=1
+#SBATCH --tasks-per-node=1
+#SBATCH --time=00:01:00
+#SBATCH --exclusive
+#SBATCH --qos=debug
+
+./hi; sleep 30 > serial.out
+

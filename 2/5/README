@@ -1,0 +1,9 @@
+% bsc_queue
+
+  QUEUE NAME     MAX TIME   MAX PROC
+       debug     02:00:00        768
+ interactive     02:00:00          4
+    training   2-00:00:00        768
+
+We choose the debug queue to launch the hello world test program.
+

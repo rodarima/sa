@@ -1,12 +1,16 @@
 ## Getting started with parallel programming models
 
-### Task 3.1: Check the loaded modules in your environment.
+### Task 3.1
+
+Check the loaded modules in your environment.
 
 	% module list
 	Currently Loaded Modules:
 	  1) intel/2017.4   2) impi/2017.4   3) mkl/2017.4   4) bsc/1.0
 
-### Task 3.2: Create, compile and run a Hello World program with MPI.
+### Task 3.2
+
+Create, compile and run a Hello World program with MPI.
 
 	% cat mpi_helloworld.c
 	#include <mpi.h>
@@ -45,7 +49,9 @@
 	I am 20 of 48
 	I am 24 of 48
 
-### Task 3.3: submit your "Hello World" program
+### Task 3.3
+
+Submit your "Hello World" program.
 
 The job script:
 
@@ -103,3 +109,69 @@ Check the output of the execution. What happened with the order of outputs?
 	I am 13 of 16
 
 It's not sorted.
+
+### Task 3.4
+
+Modify your solution that just prints a line of output from each process so that
+the output is printed in process rank order: process 0 output first, then
+process 1, and so on.
+
+	% cat mpi_helloworld.c
+	#include <mpi.h>
+	#include <stdio.h>
+
+	int main (int argc, char **argv)
+	{
+		int size, rank, dummy=0;
+		MPI_Init (&argc, &argv);
+		MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+		MPI_Comm_size (MPI_COMM_WORLD, &size);
+
+		if (rank != 0)
+		{
+			MPI_Recv(&dummy, 1, MPI_INT, rank-1,
+				0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		}
+
+		printf("I am %d of %d\n", rank, size);
+
+		if (rank < size-1)
+		{
+			MPI_Send(&dummy, 1, MPI_INT, rank+1,
+				0, MPI_COMM_WORLD);
+		}
+
+		MPI_Finalize();
+
+		return 0;
+	}
+
+	% mpicc mpi_helloworld.c -o mpi_helloworld
+
+	% mpirun ./mpi_helloworld
+	I am 0 of 48
+	I am 1 of 48
+	I am 2 of 48
+	I am 3 of 48
+	I am 4 of 48
+	...
+	I am 42 of 48
+	I am 43 of 48
+	I am 44 of 48
+	I am 45 of 48
+	I am 46 of 48
+	I am 47 of 48
+
+Now is sorted.
+
+### Task 3.5
+
+### Task 3.6
+
+### Task 3.7
+
+### Task 3.8
+
+Create and execute a MPI program that estimates the number PI.
+
+

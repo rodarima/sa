@@ -166,7 +166,187 @@ Now is sorted.
 
 ### Task 3.5
 
+When compiling and running the sequential code the output is the following:
+
+	% ./hello
+	hello(0)world(0)
+
+The most basic OpenMP parallelization is adding the `omp parallel` directive: 
+
+	#include <stdio.h>
+	#include <omp.h>
+
+	int main(){
+			int ID = 0;
+			#pragma omp parallel
+			printf("hello(%d)", ID);
+			printf("world(%d) \n", ID);
+			return 0;
+	}
+
+If we execute the program now we can observe the following output:
+	
+	% ./hello
+	hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)\
+	hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)\
+	hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)\
+	hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)\
+	hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)\
+	hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)hello(0)world(0)
+
+We notice that "hello" was printed 48 times, which means that 48 threads are created.
+In the case that we don't specify the number of threads in the `omp parallel` directive
+the runtime system determines how many of them to spawn.
+
 ### Task 3.6
+
+We can change the code in order to print the rank of each thread as it executes.
+For this we use `omp_get_thread_num()` and `omp_get_num_threads()` functions:
+
+	#include <stdio.h>
+	#include <omp.h>
+
+	void hello(void);
+
+	int main(){
+			#pragma omp parallel
+			hello();
+			return 0;
+	}
+
+	void hello(void){
+			int my_rank = omp_get_thread_num();
+			int thread_count = omp_get_num_threads();
+
+			printf("Hello from thread %d of %d\n", my_rank, thread_count);
+	}
+
+As we would expect, the output prints `x out of 48` for each thread:
+
+	% ./hello
+	Hello from thread 0 of 48
+	Hello from thread 16 of 48
+	Hello from thread 7 of 48
+	Hello from thread 4 of 48
+	Hello from thread 30 of 48
+	Hello from thread 34 of 48
+	Hello from thread 17 of 48
+	Hello from thread 43 of 48
+	Hello from thread 41 of 48
+	Hello from thread 45 of 48
+	Hello from thread 31 of 48
+	Hello from thread 19 of 48
+	Hello from thread 3 of 48
+	Hello from thread 47 of 48
+	Hello from thread 6 of 48
+	Hello from thread 27 of 48
+	Hello from thread 46 of 48
+	Hello from thread 9 of 48
+	Hello from thread 24 of 48
+	Hello from thread 25 of 48
+	Hello from thread 44 of 48
+	Hello from thread 12 of 48
+	Hello from thread 2 of 48
+	Hello from thread 5 of 48
+	Hello from thread 23 of 48
+	Hello from thread 20 of 48
+	Hello from thread 28 of 48
+	Hello from thread 22 of 48
+	Hello from thread 21 of 48
+	Hello from thread 11 of 48
+	Hello from thread 10 of 48
+	Hello from thread 15 of 48
+	Hello from thread 13 of 48
+	Hello from thread 14 of 48
+	Hello from thread 1 of 48
+	Hello from thread 18 of 48
+	Hello from thread 32 of 48
+	Hello from thread 35 of 48
+	Hello from thread 37 of 48
+	Hello from thread 39 of 48
+	Hello from thread 29 of 48
+	Hello from thread 42 of 48
+	Hello from thread 8 of 48
+	Hello from thread 40 of 48
+	Hello from thread 33 of 48
+	Hello from thread 26 of 48
+	Hello from thread 36 of 48
+	Hello from thread 38 of 48
+
+We notice that threads don't execute in order of their rank. 
+In fact, the order depends on how the scheduler assigns execution of each thread.
+
+In order to make the threads execute in order of rank, use the `omp ordered` directive:
+	
+	#include <stdio.h>
+	#include <omp.h>
+
+	void hello(void);
+
+	int main(){
+			#pragma omp parallel
+			hello();
+			return 0;
+	}
+
+	void hello(void){
+			int my_rank = omp_get_thread_num();
+			int thread_count = omp_get_num_threads();
+			#pragma omp ordered
+			printf("Hello from thread %d of %d\n", my_rank, thread_count);
+	}
+
+At this point, each thread executes in order of its rank:
+
+	% ./hello
+	Hello from thread 0 of 48
+	Hello from thread 1 of 48
+	Hello from thread 2 of 48
+	Hello from thread 3 of 48
+	Hello from thread 4 of 48
+	Hello from thread 5 of 48
+	Hello from thread 6 of 48
+	Hello from thread 7 of 48
+	Hello from thread 8 of 48
+	Hello from thread 9 of 48
+	Hello from thread 10 of 48
+	Hello from thread 11 of 48
+	Hello from thread 12 of 48
+	Hello from thread 13 of 48
+	Hello from thread 14 of 48
+	Hello from thread 15 of 48
+	Hello from thread 16 of 48
+	Hello from thread 17 of 48
+	Hello from thread 18 of 48
+	Hello from thread 19 of 48
+	Hello from thread 20 of 48
+	Hello from thread 21 of 48
+	Hello from thread 22 of 48
+	Hello from thread 23 of 48
+	Hello from thread 24 of 48
+	Hello from thread 25 of 48
+	Hello from thread 26 of 48
+	Hello from thread 27 of 48
+	Hello from thread 28 of 48
+	Hello from thread 29 of 48
+	Hello from thread 30 of 48
+	Hello from thread 31 of 48
+	Hello from thread 32 of 48
+	Hello from thread 33 of 48
+	Hello from thread 34 of 48
+	Hello from thread 35 of 48
+	Hello from thread 36 of 48
+	Hello from thread 37 of 48
+	Hello from thread 38 of 48
+	Hello from thread 39 of 48
+	Hello from thread 40 of 48
+	Hello from thread 41 of 48
+	Hello from thread 42 of 48
+	Hello from thread 43 of 48
+	Hello from thread 44 of 48
+	Hello from thread 45 of 48
+	Hello from thread 46 of 48
+	Hello from thread 47 of 48
 
 ### Task 3.7
 

@@ -1,8 +1,12 @@
 ## Getting started with parallel programming models
 
+authors: Arias Rodrigo, Burca Horia
+
+date: 15/10/2018
+
 ### Task 3.1
 
-Check the loaded modules in your environment.
+Question: Check the loaded modules in your environment.
 
 	% module list
 	Currently Loaded Modules:
@@ -10,7 +14,7 @@ Check the loaded modules in your environment.
 
 ### Task 3.2
 
-Create, compile and run a Hello World program with MPI.
+Question: Create, compile and run a Hello World program with MPI.
 
 	% cat mpi_helloworld.c
 	#include <mpi.h>
@@ -51,7 +55,8 @@ Create, compile and run a Hello World program with MPI.
 
 ### Task 3.3
 
-Submit your "Hello World" program.
+Question: Submit your "Hello World" program. Check the output of the execution.
+What happened with the order of outputs?
 
 The job script:
 
@@ -88,7 +93,7 @@ When it's submitted:
 	% squeue
 		     JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
 
-Check the output of the execution. What happened with the order of outputs?
+If we take a look at the output we can notice that the execution is not sorted by rank:
 
 	% cat output*.out
 	I am 1 of 16
@@ -108,11 +113,9 @@ Check the output of the execution. What happened with the order of outputs?
 	I am 14 of 16
 	I am 13 of 16
 
-It's not sorted.
-
 ### Task 3.4
 
-Modify your solution that just prints a line of output from each process so that
+Question: Modify your solution that just prints a line of output from each process so that
 the output is printed in process rank order: process 0 output first, then
 process 1, and so on.
 
@@ -162,9 +165,14 @@ process 1, and so on.
 	I am 46 of 48
 	I am 47 of 48
 
-Now is sorted.
+Now it is sorted.
 
 ### Task 3.5
+
+Question: Compile and run the following sequential Hello World program. What
+is the output? Then, parallelize (compile and run) the hello world sequential code
+adding the most basic OpenMP parallel directive. How many threads are created?
+Why?
 
 When compiling and running the sequential code the output is the following:
 
@@ -199,6 +207,10 @@ In the case that we don't specify the number of threads in the `omp parallel` di
 the runtime system determines how many of them to spawn.
 
 ### Task 3.6
+
+Question: Write a multithreaded version of the same program where each thread
+prints its thread num as a ID. What happened? Why? How can we solve the
+problem?
 
 We can change the code in order to print the rank of each thread as it executes.
 For this we use `omp_get_thread_num()` and `omp_get_num_threads()` functions:
@@ -350,7 +362,7 @@ At this point, each thread executes in order of its rank:
 
 ### Task 3.7
 
-Task 3.7: Compile and execute in your login node the sequential code 3.1
+Question: Compile and execute in your login node the sequential code 3.1
 presented in section 3.4.1 .
 
 	% cat pi.c
@@ -402,7 +414,7 @@ presented in section 3.4.1 .
 
 ### Task 3.8
 
-Create and execute a MPI program that estimates the number PI.
+Question: Create and execute a MPI program that estimates the number PI.
 
 	% cat pi.c
 	#include <math.h>
@@ -489,7 +501,7 @@ Create and execute a MPI program that estimates the number PI.
 
 ### Task 3.9
 
-Task 3.9: Create and execute a OpenMP program pi.c to estimate the value
+Question: Create and execute a OpenMP program pi.c to estimate the value
 of number PI. Consider the number of theads is a parameter. The input data a,
 b, n are hardwired for simplicity. Use the following code as a base and include
 the parallel pragma for parallelizing and use a critical directive for global

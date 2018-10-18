@@ -8,15 +8,22 @@ date: 15/10/2018
 
 Question: Check the loaded modules in your environment.
 
+This can be done using the `module list` command:
+
 	% module list
 	Currently Loaded Modules:
 	  1) intel/2017.4   2) impi/2017.4   3) mkl/2017.4   4) bsc/1.0
+
+We can see that the modules related to the Intel compilers, the Intel 
+MPI software stack, the math kernel libraries MKL and the BSC helpful
+scripts are loaded.
 
 ### Task 3.2
 
 Question: Create, compile and run a Hello World program with MPI.
 
-	% cat mpi_helloworld.c
+We use the following basic code that makes use of the MPI paradigm:
+
 	#include <mpi.h>
 	#include <stdio.h>
 
@@ -31,6 +38,8 @@ Question: Create, compile and run a Hello World program with MPI.
 
 		return 0;
 	}
+	
+We compile and run using the following commands:
 
 	% mpicc mpi_helloworld.c -o mpi_helloworld
 
@@ -58,9 +67,8 @@ Question: Create, compile and run a Hello World program with MPI.
 Question: Submit your "Hello World" program. Check the output of the execution.
 What happened with the order of outputs?
 
-The job script:
+We use the following job script:
 
-	% cat job
 	#!/bin/bash
 	#SBATCH --job-name="MPI_HelloWorld"
 	#SBATCH --workdir=.
@@ -72,9 +80,7 @@ The job script:
 	#SBATCH --exclusive
 	#SBATCH --qos=debug
 
-	mpirun ./mpi_helloworld
-
-When it's submitted:
+In order to submit we use `sbatch` and then `squeue` to inspect the queue:
 
 	% sbatch job
 
@@ -95,7 +101,6 @@ When it's submitted:
 
 If we take a look at the output we can notice that the execution is not sorted by rank:
 
-	% cat output*.out
 	I am 1 of 16
 	I am 2 of 16
 	I am 5 of 16
@@ -119,7 +124,12 @@ Question: Modify your solution that just prints a line of output from each proce
 the output is printed in process rank order: process 0 output first, then
 process 1, and so on.
 
-	% cat mpi_helloworld.c
+In order to make the processes execute in order of their rank we make use
+of the methods `MPI_Send` and `MPI_Receive`. For each process with `rank > 0`
+we expect to receive something from the process with `rank - 1`. And in turn,
+for each process with `rank < size - 1` we send something to the process
+with `rank + 1`:
+
 	#include <mpi.h>
 	#include <stdio.h>
 
@@ -149,6 +159,8 @@ process 1, and so on.
 		return 0;
 	}
 
+When we compile and run we observe that we have an ordered execution:
+
 	% mpicc mpi_helloworld.c -o mpi_helloworld
 
 	% mpirun ./mpi_helloworld
@@ -164,8 +176,6 @@ process 1, and so on.
 	I am 45 of 48
 	I am 46 of 48
 	I am 47 of 48
-
-Now it is sorted.
 
 ### Task 3.5
 
@@ -365,7 +375,8 @@ At this point, each thread executes in order of its rank:
 Question: Compile and execute in your login node the sequential code 3.1
 presented in section 3.4.1 .
 
-	% cat pi.c
+We have the following code:
+
 	#include <math.h>
 	#include <stdlib.h>
 	#include <stdio.h>
@@ -405,6 +416,8 @@ presented in section 3.4.1 .
 		printf("the integral from %f to %f is %.15e\n", a, b, pi);
 	}
 
+When we compile and run we have the following output:
+
 	% ./pi
 	Enter the number of subintervals: 10
 	With n = 10 trapezoids, the integral from 0.000000 to 1.000000 is 3.139925988907159e+00
@@ -416,7 +429,10 @@ presented in section 3.4.1 .
 
 Question: Create and execute a MPI program that estimates the number PI.
 
-	% cat pi.c
+In order to parallelize the previous code, we calculate the trapezoidal rule
+on different intervals in each process and then in the main process
+we make the sum:
+ 
 	#include <math.h>
 	#include <stdlib.h>
 	#include <stdio.h>
@@ -493,6 +509,8 @@ Question: Create and execute a MPI program that estimates the number PI.
 		return 0;
 	}
 
+When we compile and run we have the following output:
+
 	% make
 	mpicc     pi.c  -lm -o pi
 
@@ -507,6 +525,9 @@ b, n are hardwired for simplicity. Use the following code as a base and include
 the parallel pragma for parallelizing and use a critical directive for global
 sum (each thread explicitly computes the integral over its assigned
 subinterval).
+
+In order to parallelize the sequential code with OpenMP we use a reduction
+to sum up the computation of the trapezoidal rule on different intervals:
 
 	#include <stdio.h>
 	#include <stdlib.h>

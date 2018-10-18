@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <omp.h>
-#include <sys/time.h"
+#include <sys/time.h>
 
 #define RUNS 5
 #define MAX_ERR 1e-6
@@ -11,12 +11,12 @@ struct timeval start_time, end_time;
 
 void print_times() 
 {
-	int total_usecs;
+	int total_usec;
 	float total_time, total_flops;
-	total_usecs = (end_time.tv_sec - start_time.tv_sec) * 1000000 +
-		(end_time.tv_usec - start_time.tv_usecs);
-	printf(" %.2f mSec \n", ((float) total_usecs) / 1000.0);
-	total_time = ((float) total_usecs) / 1000000.0;
+	total_usec = (end_time.tv_sec - start_time.tv_sec) * 1000000 +
+		(end_time.tv_usec - start_time.tv_usec);
+	printf(" %.2f mSec \n", ((float) total_usec) / 1000.0);
+	total_time = ((float) total_usec) / 1000000.0;
 }
 
 double f(double x)

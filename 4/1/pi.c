@@ -4,19 +4,15 @@
 #include <omp.h>
 #include <sys/time.h>
 
-#define RUNS 5
+#define RUNS 200
 #define MAX_ERR 1e-6
 
-struct timeval start_time, end_time;
-
-void print_times() 
+double sec()
 {
-	int total_usec;
-	float total_time, total_flops;
-	total_usec = (end_time.tv_sec - start_time.tv_sec) * 1000000 +
-		(end_time.tv_usec - start_time.tv_usec);
-	printf(" %.2f mSec \n", ((float) total_usec) / 1000.0);
-	total_time = ((float) total_usec) / 1000000.0;
+	struct timeval tv;
+	gettimeofday(&tv, NULL);
+	return ((double) tv.tv_sec) +
+		((double) tv.tv_usec) / 1e6;
 }
 
 double f(double x)
@@ -54,6 +50,7 @@ int comp(int thread_count)
 	int n;
 
 	n=268435456; /*16^7 */
+	//n=1e4; /*16^7 */
 	a=0;
 	b=1;
 
@@ -64,7 +61,7 @@ int comp(int thread_count)
 	//		thread_count,n);
 	//printf("the integral from %f to %f is  %.15e\n", a, b,
 	//		global_result);
-	
+
 	if(fabs(M_PI - global_result) > MAX_ERR)
 	{
 		printf("The error is to big: %e\n", M_PI - global_result);
@@ -76,7 +73,8 @@ int comp(int thread_count)
 
 int main(int argc, char* argv[])
 {
-	int i, thread_count, res;
+	int i, p, res;
+	double t, times[RUNS], mean=0, var=0, std;
 
 	if(!argv[1])
 	{
@@ -84,20 +82,33 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 
-	thread_count = strtol(argv[1], NULL, 10);
+	p = strtol(argv[1], NULL, 10);
 
 	for(i = 0; i<RUNS; i++)
 	{
-		gettimeofday(&start_time, NULL);
-		res = comp(thread_count);
-		gettimeofday(&end_time, NULL);
+		t = sec();
+		res = comp(p);
+		t = sec() - t;
 		if (res)
 		{
 			printf("Computation failed\n");
 			return 1;
 		}
-		print_times();
+		times[i] = t;
+		mean += t;
+		//fprintf(stderr, "i=%d t=%f\n", i, t);
 	}
+
+	mean = mean/RUNS;
+
+	for(i=0; i<RUNS; i++)
+	{
+		var += (mean - times[i]) * (mean - times[i]);
+	}
+
+	std = sqrt(var/(RUNS - 1));
+
+	printf("%d\t%d\t%f\t%f\n", p, RUNS, 1000*mean, 1000*std);
 
 	return 0;
 }

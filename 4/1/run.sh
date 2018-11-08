@@ -2,7 +2,8 @@
 
 THREADS="2 4 8 16"
 
+echo -e "p\truns\tmean time ms\tstd time ms"
+
 for T in $THREADS; do
-	echo "Running with $T thread(s)"
 	./pi $T
 done

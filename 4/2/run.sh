@@ -3,8 +3,8 @@
 #THREADS="32 16 8 4 2"
 THREADS="2 4 8 16 32"
 
-rm -f results.txt
+echo -e "p\truns\tmean time ms\tstd time ms"
 
 for T in $THREADS; do
-	mpirun -n $T ./pi | tee -a results.txt
+	mpirun -n $T ./pi
 done

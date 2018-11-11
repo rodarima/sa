@@ -45,22 +45,22 @@ Table 4.3
 
 |task/node|p       |runs    |mean time ms    |std time ms|
 |:-------:|:------:|:------:|:--------------:|:---------:|
-|1        |16      |200     |16.923951       |0.567657   |
+|1        |16      |200     |261.763766      |50.791005  |
 |16       |16      |200     |16.989603       |0.478375   |
 
 For the execution, srun was used with the number of nodes and tasks per node,
 respectively:
 
-	% srun -N 1 --ntasks-per-node 16 ./pi
-	% srun -N 16 --ntasks-per-node 1 ./pi
-
-TODO: Revise the execution time, shouldn't the first one be much higher due to
-network latency?
+	% srun -N 1 --ntasks-per-node 16 mpirun./pi
+	% srun -N 16 --ntasks-per-node 1 mpirun ./pi
 
 ## Task 4.4
 *Compare and analyze the results from Table 4.3 and Table 4.2.*
 
-We see that both results are very similar, with is not what we expect.
+We see that using multiple nodes increased the time one order of magnitude. It
+makes sense, as we need to send the data over the network to the other nodes,
+and send the results back. Compared with only shared memory, we see a big
+difference.
 
 ## Task 4.5
 *Populate the Speedup table (Table 4.6) for this example and analyze the results.

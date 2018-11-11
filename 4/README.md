@@ -70,6 +70,13 @@ processes, when local memory is used.
 Remark the situations for n = 65536 and p increases. Justify the behaviour of
 the results.*
 
+***Notice!*** For tasks 4.5 and 4.6 we have used a different sequential time value for a problem size of 
+*n=16777216*, namely:
+
+T<sub>seq, n = 16777216</sub> = 56156.
+
+This ensured consistent results for speedup and efficiency.
+
 **Table 4.6** Speedups for the Parallel MPI version of the trapezoidal rule for Pi number
 
 |p \ n        |65536         |1048576       |16777216      |268435456     |

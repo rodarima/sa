@@ -74,17 +74,15 @@ the results.*
 
 |p \ n        |65536         |1048576       |16777216      |268435456     |
 |:-----------:|:------------:|:------------:|:------------:|:------------:|
-|2            |1.946         |2.014         |12.603        |2.055         |
-|4            |1.685         |3.431         |24.644        |4.031         |
-|6            |1.387         |5.414         |46.715        |7.925         |
-|8            |0.839         |5.675         |84.618        |14.924        |
+|2            |1.946         |2.014         |1.987         |2.055         |
+|4            |1.685         |3.431         |3.886         |4.031         |
+|6            |1.387         |5.414         |7.366         |7.925         |
+|8            |0.839         |5.675         |13.342        |14.924        |
 
 We can observe that in general the speedup increases with the number of processors.
 However, in the case of *n = 65536* the speedup actually decreases when we increase *p*.
 This indicates that for small problem sizes the overhead of spawning more processes is too
 important compared to the parallel execution time thus decreasing the speedup.
-
-TODO: error in the example data? seems like we get a super super speedup for *n=16777216*.
 
 ## Task 4.6
 *Populate the efficiencies table (Table 4.7) for this example and analyze
@@ -94,17 +92,15 @@ the results.*
 
 |p \ n        |65536         |1048576       |16777216      |268435456     |
 |:-----------:|:------------:|:------------:|:------------:|:------------:|
-|2            |0.973         |1.007         |6.302         |1.028         |
-|4            |0.421         |0.858         |6.161         |1.008         |
-|6            |0.231         |0.902         |7.786         |1.321         |
-|8            |0.105         |0.709         |10.577        |1.865         |
+|2            |0.973         |1.007         |0.994         |1.028         |
+|4            |0.421         |0.858         |0.971         |1.008         |
+|6            |0.231         |0.902         |1.228         |1.321         |
+|8            |0.105         |0.709         |1.668         |1.865         |
 
 A good parallelization is characterised by an efficiency close to *1*.
 In this example the best results are the ones with a bigger problem size.
-A super-speedup situation happens with *p=4* and *p=8* with a problem
-size of *n=16777216* and *n=268435456*.
-
-TODO: error in the example data? seems like we get a super super efficiency for *n=16777216*.
+A super-speedup situation happens with *p=4* and *n=1048576*, *p={6,8}* and *n=16777216*,
+and *p={2,4,6,8}* and *n=268435456*.
 
 ## Task 4.7
 *According Tables 4.9 and 4.10 for this example, justify why for this

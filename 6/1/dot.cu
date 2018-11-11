@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
 #define N 256
 #define BLOCK_SIZE_DIM 16
+#define MAX_CELL 1000
 
 #define err(format, ...) do { fprintf(stderr, format, ##__VA_ARGS__); exit(1); } while(0)
 
@@ -22,9 +22,6 @@ __global__ void matrixProduct(double *matrix_a, double *matrix_b,
 	int row = threadIdx.y + blockDim.y * blockIdx.y;
 	int col = threadIdx.x + blockDim.x * blockIdx.x;
 
-	//if((row == 0) && (col == 0))
-	//	printf("Hello from the GPU!\n");
-
 	if (col < width && row < width)
 	{
 		for (int k=0; k<width; k++)
@@ -37,10 +34,11 @@ __global__ void matrixProduct(double *matrix_a, double *matrix_b,
 
 
 void initializeMatrices(double matrix_a[N][N], double matrix_b[N][N]) {
+	srand(time(NULL));
 	for (int i=0; i<N; i++) {
 		for (int j=0; j<N; j++) {
-			matrix_a[i][j] = rand();
-			matrix_b[i][j] = rand();
+			matrix_a[i][j] = rand() % MAX_CELL;
+			matrix_b[i][j] = rand() % MAX_CELL;
 		}
 	}
 }
@@ -51,34 +49,31 @@ void showResults(double matrix_a[N][N], double matrix_b[N][N], double
 	printf("***** MATRIX A ***** \n");
 	for (int i=0; i<N; i++) {
 		for (int j=0; j<N; j++) {
-			(j % N == N-1) ? printf("%f \n", matrix_a[i][j]) : 
-				printf("%f,", matrix_a[i][j]);
+			(j % N == N-1) ? printf("%.0f \n", matrix_a[i][j]) : 
+				printf("%.0f,", matrix_a[i][j]);
 		}
 	}
 	printf("***** MATRIX B ***** \n");
 	for (int i=0; i<N; i++) {
 		for (int j=0; j<N; j++) {
-			(j % N == N-1) ? printf("%f \n", matrix_b[i][j]) : 
-				printf("%f,", matrix_b[i][j]);
+			(j % N == N-1) ? printf("%.0f \n", matrix_b[i][j]) : 
+				printf("%.0f,", matrix_b[i][j]);
 		}
 	}
 	printf("***** MATRIX C ***** \n");
 	for (int i=0; i<N; i++) {
 		for (int j=0; j<N; j++) {
-			(j % N == N-1) ? printf("%f \n", matrix_c[i][j]) : 
-				printf("%f,", matrix_c[i][j]);
+			(j % N == N-1) ? printf("%.0f \n", matrix_c[i][j]) : 
+				printf("%.0f,", matrix_c[i][j]);
 		}
 	}
 }
 
 int main(int argc, char *argv[])
 {
-	//double *h_a, *h_b, *h_c;
 	double h_a[N][N], h_b[N][N], h_c[N][N];
 	double *d_a, *d_b, *d_c;
-	int size = N * N;
-
-	srand(123);
+	int size = N * N * sizeof(double);
 
 	initializeMatrices(h_a, h_b);
 
@@ -102,10 +97,8 @@ int main(int argc, char *argv[])
 	checkCuda(cudaFree(d_a));
 	checkCuda(cudaFree(d_b));
 	checkCuda(cudaFree(d_c));
-	//showResults(h_a, h_b, h_c);
+	showResults(h_a, h_b, h_c);
 	cudaDeviceReset();
-
 
 	return 0;
 }
-

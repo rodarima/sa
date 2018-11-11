@@ -5,15 +5,15 @@ estimates the number π.*
 We slightly modified the table to include the mean and std of 200 runs,
 measuring the running time of the program.
 
-	Table 4.1
+Table 4.1
 
-	|p       |runs    |mean time ms    |std time ms|
-	|:------:|:------:|:--------------:|:---------:|
-	|2       |200     |136.260248      |0.540395   |
-	|4       |200     |68.743345       |1.807676   |
-	|8       |200     |34.402916       |2.805065   |
-	|16      |200     |17.196037       |0.919341   |
-	|32      |200     |8.641697        |0.534061   |
+|p       |runs    |mean time ms    |std time ms|
+|:------:|:------:|:--------------:|:---------:|
+|2       |200     |136.260248      |0.540395   |
+|4       |200     |68.743345       |1.807676   |
+|8       |200     |34.402916       |2.805065   |
+|16      |200     |17.196037       |0.919341   |
+|32      |200     |8.641697        |0.534061   |
 
 The program is in 1/pi.c
 

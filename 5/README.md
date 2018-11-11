@@ -1,3 +1,9 @@
+## Lab 5: Getting started with parallel performance models
+
+<div style="text-align: right">authors: Arias Rodrigo, Burca Horia</div>
+
+<div style="text-align: right">date: 12/11/2018</div>
+
 ## Task 5.1
 
 *Analize with your partner both codes 5.1 and 5.2 that implement a matrix-

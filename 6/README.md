@@ -1,3 +1,9 @@
+## Lab 6: Getting started with GPU & CUDA
+
+<div style="text-align: right">authors: Arias Rodrigo, Burca Horia</div>
+
+<div style="text-align: right">date: 12/11/2018</div>
+
 ## Task 6.1
 *A program that performs a matrix product  (A * B = C) parallelizing the
 computation with CUDA*

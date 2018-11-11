@@ -1,3 +1,9 @@
+## Lab 4: Getting started with parallel performance metrics
+
+<div style="text-align: right">authors: Arias Rodrigo, Burca Horia</div>
+
+<div style="text-align: right">date: 12/11/2018</div>
+
 ## Task 4.1
 *Populate the Table 4.1 and analyze the results for the program that
 estimates the number π.*
@@ -7,13 +13,13 @@ measuring the running time of the program.
 
 **Table 4.1** OpenMP execution time of the program that estimates the Pi number
 
-|nr threads|runs    |mean time ms    |std time ms|
-|:--------:|:------:|:--------------:|:---------:|
-|2         |200     |136.260248      |0.540395   |
-|4         |200     |68.743345       |1.807676   |
-|8         |200     |34.402916       |2.805065   |
-|16        |200     |17.196037       |0.919341   |
-|32        |200     |8.641697        |0.534061   |
+|nr_threads|runs    |mean_time(ms)   |std_time(ms)|
+|:--------:|:------:|:--------------:|:----------:|
+|2         |200     |136.260248      |0.540395    |
+|4         |200     |68.743345       |1.807676    |
+|8         |200     |34.402916       |2.805065    |
+|16        |200     |17.196037       |0.919341    |
+|32        |200     |8.641697        |0.534061    |
 
 We can observe that with OpenMP, by increasing the number of threads used, the mean
 execution time decreases significantly. 
@@ -24,19 +30,19 @@ the number π. Compare the results from Table 4.1 and Table 4.2.*
 
 **Table 4.2** MPI execution time of the program that estimates the Pi number (one node)
 
-|nr tasks|runs    |mean time ms    |std time ms|
-|:------:|:------:|:--------------:|:---------:|
-|2       |200     |136.010271      |1.422983   |
-|4       |200     |67.964889       |0.698149   |
-|8       |200     |34.164717       |1.013572   |
-|16      |200     |16.987933       |0.360736   |
-|32      |200     |8.511111        |0.267816   |
+|nr_threads|runs    |mean_time(ms)   |std_time(ms)|
+|:--------:|:------:|:--------------:|:----------:|
+|2         |200     |136.010271      |1.422983    |
+|4         |200     |67.964889       |0.698149    |
+|8         |200     |34.164717       |1.013572    |
+|16        |200     |16.987933       |0.360736    |
+|32        |200     |8.511111        |0.267816    |
 
 We see that with MPI as the number of processes *p* doubles, the average running time
 almost halves.
 
 The results are similar to what we observed in the OpenMP version
-(Table 4.1). Both paradigms perform similarly for this program.
+(Table 4.1).
 
 ## Task 4.3
 *Populate the Table 4.3 with 16 nodes and analyze the results.*
@@ -44,10 +50,10 @@ The results are similar to what we observed in the OpenMP version
 **Table 4.3** MPI execution time of the program that estimates the Pi number 
 (16 nodes, one process per node)
 
-|task/node|p       |runs    |mean time ms    |std time ms|
-|:-------:|:------:|:------:|:--------------:|:---------:|
-|1        |16      |200     |261.763766      |50.791005  |
-|16       |16      |200     |16.989603       |0.478375   |
+|task/node|p       |runs    |mean_time(ms)   |std_time(ms)|
+|:-------:|:------:|:------:|:--------------:|:----------:|
+|1        |16      |200     |261.763766      |50.791005   |
+|16       |16      |200     |16.989603       |0.478375    |
 
 For the execution, srun was used with the number of nodes and tasks per node:
 

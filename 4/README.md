@@ -112,7 +112,7 @@ the results.*
 
 A good parallelization is characterised by an efficiency close to *1*.
 In this example the best results are the ones with a bigger problem size.
-A super-speedup situation happens with *p=4* and *n=1048576*, *p={6,8}* and *n=16777216*,
+A super-speedup situation happens with *p=2* and *n=1048576*, *p={6,8}* and *n=16777216*,
 and *p={2,4,6,8}* and *n=268435456*.
 
 ## Task 4.7

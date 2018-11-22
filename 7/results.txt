@@ -1,0 +1,248 @@
+[sam14015@p9login1 7]$ python3 2.py 
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[39987,1],0] (PID 41444)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+Using TensorFlow backend.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 24, 24, 32)        832       
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 12, 12, 32)        0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 4608)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                46090     
+=================================================================
+Total params: 46,922
+Trainable params: 46,922
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/50
+2018-11-19 11:07:38.533227: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with
+properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-11-19 11:07:38.974809: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 1 with
+properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-11-19 11:07:39.350410: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 2 with
+properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-11-19 11:07:39.734714: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 3 with
+properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-11-19 11:07:39.734847: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu
+devices: 0, 1, 2, 3
+2018-11-19 11:07:40.904563: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect
+StreamExecutor with strength 1 edge matrix:
+2018-11-19 11:07:40.904614: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 1 2 3 
+2018-11-19 11:07:40.904627: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N Y Y Y 
+2018-11-19 11:07:40.904636: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   Y N Y Y 
+2018-11-19 11:07:40.904644: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   Y Y N Y 
+2018-11-19 11:07:40.904656: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   Y Y Y N 
+2018-11-19 11:07:40.906235: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device
+(/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical
+GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute
+capability: 7.0)
+2018-11-19 11:07:41.155902: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device
+(/job:localhost/replica:0/task:0/device:GPU:1 with 14855 MB memory) -> physical
+GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute
+capability: 7.0)
+2018-11-19 11:07:41.406796: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device
+(/job:localhost/replica:0/task:0/device:GPU:2 with 14853 MB memory) -> physical
+GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute
+capability: 7.0)
+2018-11-19 11:07:41.660013: I
+tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device
+(/job:localhost/replica:0/task:0/device:GPU:3 with 14857 MB memory) -> physical
+GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute
+capability: 7.0)
+60000/60000 [==============================] - 13s 225us/step - loss: 0.6290 -
+acc: 0.8375
+Epoch 2/50
+60000/60000 [==============================] - 3s 50us/step - loss: 0.3012 -
+acc: 0.9121
+Epoch 3/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.2508 -
+acc: 0.9286
+Epoch 4/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.2089 -
+acc: 0.9411
+Epoch 5/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1756 -
+acc: 0.9502
+Epoch 6/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1505 -
+acc: 0.9584
+Epoch 7/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1318 -
+acc: 0.9639
+Epoch 8/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1178 -
+acc: 0.9680
+Epoch 9/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1071 -
+acc: 0.9712
+Epoch 10/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.0985 -
+acc: 0.9735
+Epoch 11/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.0916 -
+acc: 0.9747
+Epoch 12/50
+60000/60000 [==============================] - 3s 49us/step - loss: 0.0858 -
+acc: 0.9772
+Epoch 13/50
+60000/60000 [==============================] - 3s 50us/step - loss: 0.0811 -
+acc: 0.9784
+Epoch 14/50
+60000/60000 [==============================] - 3s 50us/step - loss: 0.0768 -
+acc: 0.9793
+Epoch 15/50
+60000/60000 [==============================] - 3s 50us/step - loss: 0.0731 -
+acc: 0.9796
+Epoch 16/50
+60000/60000 [==============================] - 3s 52us/step - loss: 0.0703 -
+acc: 0.9809
+Epoch 17/50
+60000/60000 [==============================] - 3s 52us/step - loss: 0.0675 -
+acc: 0.9816
+Epoch 18/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0653 -
+acc: 0.9820
+Epoch 19/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0629 -
+acc: 0.9830
+Epoch 20/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0609 -
+acc: 0.9833
+Epoch 21/50
+60000/60000 [==============================] - 3s 54us/step - loss: 0.0589 -
+acc: 0.9837
+Epoch 22/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0574 -
+acc: 0.9841
+Epoch 23/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0558 -
+acc: 0.9843
+Epoch 24/50
+60000/60000 [==============================] - 3s 54us/step - loss: 0.0543 -
+acc: 0.9850
+Epoch 25/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0529 -
+acc: 0.9852
+Epoch 26/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0517 -
+acc: 0.9854
+Epoch 27/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0507 -
+acc: 0.9860
+Epoch 28/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0493 -
+acc: 0.9860
+Epoch 29/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0485 -
+acc: 0.9865
+Epoch 30/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0475 -
+acc: 0.9867
+Epoch 31/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0465 -
+acc: 0.9869
+Epoch 32/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0458 -
+acc: 0.9870
+Epoch 33/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0448 -
+acc: 0.9873
+Epoch 34/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0441 -
+acc: 0.9876
+Epoch 35/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0433 -
+acc: 0.9879
+Epoch 36/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0426 -
+acc: 0.9879
+Epoch 37/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0420 -
+acc: 0.9881
+Epoch 38/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0411 -
+acc: 0.9884
+Epoch 39/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0407 -
+acc: 0.9882
+Epoch 40/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0400 -
+acc: 0.9886
+Epoch 41/50
+60000/60000 [==============================] - 3s 53us/step - loss: 0.0395 -
+acc: 0.9887
+Epoch 42/50
+60000/60000 [==============================] - 3s 55us/step - loss: 0.0388 -
+acc: 0.9892
+Epoch 43/50
+60000/60000 [==============================] - 3s 55us/step - loss: 0.0382 -
+acc: 0.9891
+Epoch 44/50
+60000/60000 [==============================] - 3s 55us/step - loss: 0.0378 -
+acc: 0.9893
+Epoch 45/50
+60000/60000 [==============================] - 3s 55us/step - loss: 0.0371 -
+acc: 0.9896
+Epoch 46/50
+60000/60000 [==============================] - 3s 55us/step - loss: 0.0366 -
+acc: 0.9898
+Epoch 47/50
+60000/60000 [==============================] - 3s 55us/step - loss: 0.0362 -
+acc: 0.9897
+Epoch 48/50
+60000/60000 [==============================] - 3s 54us/step - loss: 0.0356 -
+acc: 0.9897
+Epoch 49/50
+60000/60000 [==============================] - 3s 54us/step - loss: 0.0353 -
+acc: 0.9900
+Epoch 50/50
+60000/60000 [==============================] - 3s 54us/step - loss: 0.0345 -
+acc: 0.9904
+10000/10000 [==============================] - 0s 43us/step
+Test loss: 0.04247535159343388
+Test accuracy: 0.9859
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+

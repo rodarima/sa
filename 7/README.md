@@ -4,8 +4,7 @@
 
 <div style="text-align: right">date: 22/11/2018</div>
 
-In order to run keras in Marenostrum, we first need to load some modules. The
-script `load-modules` contains the needed modules, depending on the cluster:
+In order to run keras in Marenostrum, we first need to load some modules. The script `load-modules` contains the needed modules, depending on the cluster:
 
 	#!/bin/bash
 
@@ -26,9 +25,7 @@ To run, use python3:
 
 ### Loading the dataset
 
-The `mnist` dataset was manually placed in the Marenostrum cluster, and then
-loaded in keras. The file `train.py` trains the model and saves the state to
-disk.
+The `mnist` dataset was manually placed in the Marenostrum cluster, and then loaded in keras. The file `train.py` trains the model and saves the state to disk.
 
 First we load the dataset:
 
@@ -56,7 +53,7 @@ First we load the dataset:
 	y_train = to_categorical(y_train, num_classes=10)
 	y_test = to_categorical(y_test, num_classes=10)
 
-To build the model, we use the Sequencial class:
+To build the model, we use the Sequential class:
 
 	# Build the model
 
@@ -181,7 +178,7 @@ Which is correctly classified:
 
 Finally, the confusion matrix is plotted as well:
 
-	# Look at confusion matrix 
+	# Look at confusion matrix
 	# Note, this code is taken straight from the SKLEARN website, an nice way of
 	# viewing confusion matrix.
 
@@ -231,6 +228,3 @@ Finally, the confusion matrix is plotted as well:
 	plt.savefig("plot.png")
 
 ![confusion matrix](plot.png)
-
-
-

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $(hostname) == 'p9login1' ]; then
+	module load cudnn/7.1.3 atlas/3.10.3 scalapack/2.0.2 fftw/3.3.7 \
+		szip/2.1.1 opencv/3.4.1 python/3.6.5_ML
+else
+	module load gcc/7.2.0 impi/2018.1 mkl/2018.1 python/3.6.4_ML
+fi

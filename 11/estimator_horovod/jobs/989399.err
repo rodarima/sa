@@ -1,0 +1,1198 @@
+unload bsc/commands (PATH, MANPATH) 
+unload CUDA/9.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+unload OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+unload GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load JAVA/ibm_8.0.5.15 (PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, JAVA_HOME,
+JAVA_ROOT, JAVA_BINDIR, SDK_HOME, JRE_HOME) 
+load OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+load CUDA/9.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load ATLAS/3.10.3 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmp8oajnook
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmp8oajnook', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4ad13748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmphmod4vop
+INFO:tensorflow:Using config: {'_model_dir': '/gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/vgg_16', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff3b315710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmphmod4vop', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff56ad3748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmplvsnkgs_
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmplvsnkgs_', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff43cd3748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Skipping training since max_steps has already saved.
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpgl40zs8x
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpgl40zs8x', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff43793748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpvsmidvuj
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpu_vpw9pd
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpvsmidvuj', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff3db13748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpcadto316
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpu_vpw9pd', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5af13748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpcadto316', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff55855748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmp3fik0vd2
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpcircrso5
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmp1a9zctum
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpcircrso5', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5dd13748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmp3fik0vd2', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5d1d36a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmp1a9zctum', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff45053748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpdklk2w1b
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpok_p0nmh
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmpgdippzjm
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpdklk2w1b', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4d795748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpok_p0nmh', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff3dc13748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmpgdippzjm', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4ae13748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmphucwabf1
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/989399/tmp4kb03ath
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmphucwabf1', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff33bd3748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/989399/tmp4kb03ath', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff41d566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2018-12-10-10:39:27
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+2018-12-10 11:39:29.893313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:29.893349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-10 11:39:30.305607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:30.305653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:30.305663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-10 11:39:30.306209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Restoring parameters from /gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/vgg_16/model.ckpt-750
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:31.625128: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:31.625164: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-10 11:39:31.890968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:31.891012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:31.891021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-10 11:39:31.891450: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:33.643239: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:33.643279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-10 11:39:33.649106: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-10 11:39:33.649141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:33.726515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:33.726554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-10 11:39:33.756303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:33.756332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:33.872189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:33.872225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:33.872272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:33.872298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:34.148958: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.149000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-10 11:39:34.207234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.207396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:34.230810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-10 11:39:34.230859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:34.254079: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.254133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:34.289353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.289400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-10 11:39:34.290288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.290337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:34.321956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.322000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:34.322010: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-10 11:39:34.322557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:34.355391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.355435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:34.355446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-10 11:39:34.356082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:34.359199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.359219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:34.359227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-10 11:39:34.359661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:34.360293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.360315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:34.360323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-10 11:39:34.360758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-10 11:39:34.406992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.407043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:34.439056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.439095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:34.439104: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-10 11:39:34.439610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:34.443444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.443465: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:34.443473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-10 11:39:34.443900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-10 11:39:34.526127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.526174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:34.526186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-10 11:39:34.526889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+2018-12-10 11:39:34.567935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.567980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:34.567991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-10 11:39:34.568505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+2018-12-10 11:39:34.582521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.582559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:34.582573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-10 11:39:34.583035: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+2018-12-10 11:39:34.600326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.600367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:34.600377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+INFO:tensorflow:Done running local_init_op.
+2018-12-10 11:39:34.600840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14846 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-10 11:39:34.650882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.650946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:34.650961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+INFO:tensorflow:Running local_init_op.
+2018-12-10 11:39:34.651688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+2018-12-10 11:39:34.753604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-10 11:39:34.753660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+INFO:tensorflow:Done running local_init_op.
+2018-12-10 11:39:34.793888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:34.793943: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:34.793959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-10 11:39:34.794644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+2018-12-10 11:39:35.027289: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:35.027336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:35.027353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-10 11:39:35.028042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14853 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-10 11:39:35.215777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:35.215816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:35.215830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-10 11:39:35.216508: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2018-12-10-10:39:52
+INFO:tensorflow:Saving dict for global step 750: accuracy/accuracy = 0.1126, global_step = 750, loss = 2.2869856
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3INFO:tensorflow:Graph was finalized.
+.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.701580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-10 11:39:54.701626: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.701634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:54.701644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python32018-12-10 11:39:54.702080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.702605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:54.702670: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.702684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:54.702697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-10 11:39:54.703431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_1_biases_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_1/biases/read/_149)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv2_conv2_1_biases_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_1_biases_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_1/biases/read/_149)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.708478: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-10 11:39:54.708530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.708538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:54.708546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.708691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-10 11:39:54.709067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.708741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.708751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:54.708759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+2018-12-10 11:39:54.709215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.709298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-10 11:39:54.709343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.709352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-10 11:39:54.709360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-10 11:39:54.709460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python32018-12-10 11:39:54.709510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.709521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:54.709532: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.709489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-10 11:39:54.709522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.709533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:54.709544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-10 11:39:54.709829: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.709984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_1/weights/read/_153)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv2_conv2_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+2018-12-10 11:39:54.710024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_1/weights/read/_153)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.710468: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:54.710498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.710507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:54.710514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+2018-12-10 11:39:54.710326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:54.710378: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.710392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.710404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.711325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:54.710934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.711381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.711381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:54.711394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:54.711406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-10 11:39:54.711414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.711426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:54.711438: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_2_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_2/weights/read/_145)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv2_conv2_2_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python32018-12-10 11:39:54.711038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_2_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_2/weights/read/_145)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.711374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-10 11:39:54.711401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.711408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-10 11:39:54.711415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-10 11:39:54.712046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14853 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.711826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.711827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:54.711865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.711874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:54.711881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-10 11:39:54.712553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.712317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv3_conv3_1_weights_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv3/conv3_1/weights/read/_137)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:An error was raised while a session was being created. This may be due to a preemption of a connected worker or parameter server. A new session will be created. Error: Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_1_biases_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_1/biases/read/_149)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'HorovodBroadcast_vgg_16_conv2_conv2_1_biases_0', defined at:
+  File "tf_estimator_horovod.py", line 153, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "tf_estimator_horovod.py", line 143, in main
+    max_steps=hparams.max_number_of_steps // hvd.size())
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 363, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 843, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 859, in _train_model_default
+    saving_listeners)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py", line 1056, in _train_with_estimator_spec
+    log_step_count_steps=self._config.log_step_count_steps) as mon_sess:
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 405, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 816, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py", line 532, in __init__
+    h.begin()
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 127, in begin
+    self.bcast_op = broadcast_global_variables(self.root_rank)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in broadcast_global_variables
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/__init__.py", line 96, in <listcomp>
+    for var in tf.global_variables()])
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/horovod/tensorflow/mpi_ops.py", line 152, in broadcast
+    return MPI_LIB.horovod_broadcast(tensor, name=name, root_rank=root_rank)
+  File "<string>", line 94, in horovod_broadcast
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 328, in apply_op
+    op_type_name, name, **keywords)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/gpfs/projects/sam14/mt_p9/virtualenv/tf_gpu_p9/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+AbortedError (see above for traceback): Horovod has been shut down. This was caused by an exception on one of the ranks or an attempt to allreduce, allgather or broadcast a tensor after one of the ranks finished execution. If the shutdown was caused by an exception, you should see the exception in the log before the first shutdown message.
+	 [[Node: HorovodBroadcast_vgg_16_conv2_conv2_1_biases_0 = HorovodBroadcast[T=DT_FLOAT, root_rank=0, _device="/job:localhost/replica:0/task:0/device:CPU:0"](vgg_16/conv2/conv2_1/biases/read/_149)]]
+	 [[Node: HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0/_207 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_73_HorovodBroadcast_vgg_16_conv5_conv5_1_biases_0", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-10 11:39:54.716738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-10 11:39:54.716796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.716808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-10 11:39:54.716817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-10 11:39:54.717203: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-10 11:39:54.717237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-10 11:39:54.717260: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-10 11:39:54.717268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-10 11:39:54.717351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-10 11:39:54.717687: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14846 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+slurmstepd: error: *** JOB 989399 ON p9r1n11 CANCELLED AT 2018-12-10T11:53:36 ***

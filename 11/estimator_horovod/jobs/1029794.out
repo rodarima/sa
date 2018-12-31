@@ -1,0 +1,54 @@
+Starting train at rank 0
+Starting train at rank 1
+Starting train at rank 2
+Starting train at rank 3
+p9r1n06:116982:117012 [0] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116982:117012 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r1n06:116982:117012 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r1n06:116982:117012 [0] INFO Using internal Network IB
+p9r1n06:116982:117012 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r1n06:116982:117012 [0] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116982:117012 [0] INFO NET/Socket : 1 interfaces found
+NCCL version 2.2.12+cuda9.2
+p9r1n06:116985:117015 [3] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116985:117015 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r1n06:116984:117013 [2] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116984:117013 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r1n06:116985:117015 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r1n06:116985:117015 [3] INFO Using internal Network IB
+p9r1n06:116985:117015 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r1n06:116984:117013 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r1n06:116984:117013 [2] INFO Using internal Network IB
+p9r1n06:116984:117013 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r1n06:116983:117014 [1] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116983:117014 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r1n06:116983:117014 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r1n06:116983:117014 [1] INFO Using internal Network IB
+p9r1n06:116983:117014 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r1n06:116985:117015 [3] INFO comm 0x3fff51175e40 rank 3 nranks 4
+p9r1n06:116985:117015 [3] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116985:117015 [3] INFO NET/Socket : 1 interfaces found
+p9r1n06:116985:117015 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r1n06:116982:117012 [0] INFO comm 0x3fff2d1613a0 rank 0 nranks 4
+p9r1n06:116982:117012 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r1n06:116984:117013 [2] INFO comm 0x3fff45176680 rank 2 nranks 4
+p9r1n06:116984:117013 [2] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116984:117013 [2] INFO NET/Socket : 1 interfaces found
+p9r1n06:116984:117013 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r1n06:116983:117014 [1] INFO comm 0x3fff41175bc0 rank 1 nranks 4
+p9r1n06:116983:117014 [1] INFO NET : Using interface ib0:10.1.1.6<0>
+p9r1n06:116983:117014 [1] INFO NET/Socket : 1 interfaces found
+p9r1n06:116983:117014 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r1n06:116982:117012 [0] INFO Using 256 threads
+p9r1n06:116982:117012 [0] INFO Min Comp Cap 7
+p9r1n06:116982:117012 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+p9r1n06:116982:117012 [0] INFO Ring 00 :    0   1   2   3
+p9r1n06:116984:117013 [2] INFO Ring 00 : 2[2] -> 3[3] via P2P/IPC
+p9r1n06:116985:117015 [3] INFO 3[116985] -> 0[116982] via direct shared memory
+p9r1n06:116983:117014 [1] INFO 1[116983] -> 2[116984] via direct shared memory
+p9r1n06:116982:117012 [0] INFO Ring 00 : 0[0] -> 1[1] via P2P/IPC
+p9r1n06:116982:117012 [0] INFO Launch mode Parallel
+Stopping train at rank 0
+Stopping train at rank 1
+Stopping train at rank 3
+Stopping train at rank 2

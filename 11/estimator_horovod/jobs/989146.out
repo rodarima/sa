@@ -1,0 +1,7 @@
+Mon Dec 10 11:01:22 CET 2018
+Working dir is: /var/spool/slurmd/job989146
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+Mon Dec 10 11:01:23 CET 2018

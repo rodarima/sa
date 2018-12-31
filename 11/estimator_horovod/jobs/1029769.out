@@ -1,0 +1,105 @@
+Starting train at rank 4
+Starting train at rank 0
+Starting train at rank 5
+Starting train at rank 2
+Starting train at rank 6
+Starting train at rank 1
+Starting train at rank 7
+Starting train at rank 3
+p9r3n15:116717:116749 [0] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116717:116749 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n15:116717:116749 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n15:116717:116749 [0] INFO Using internal Network IB
+p9r3n15:116717:116749 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n15:116717:116749 [0] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116717:116749 [0] INFO NET/Socket : 1 interfaces found
+NCCL version 2.2.12+cuda9.2
+p9r3n15:116719:116739 [2] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116719:116739 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n15:116720:116752 [3] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116720:116752 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n15:116718:116742 [1] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116718:116742 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n16:94633:94649 [3] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94633:94649 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n16:94630:94646 [0] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94630:94646 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n16:94631:94647 [1] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94631:94647 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n16:94632:94648 [2] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94632:94648 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n16:94632:94648 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n16:94632:94648 [2] INFO Using internal Network IB
+p9r3n16:94632:94648 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n15:116718:116742 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n15:116718:116742 [1] INFO Using internal Network IB
+p9r3n15:116718:116742 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n15:116719:116739 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n15:116719:116739 [2] INFO Using internal Network IB
+p9r3n15:116719:116739 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n15:116720:116752 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n15:116720:116752 [3] INFO Using internal Network IB
+p9r3n15:116720:116752 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n16:94631:94647 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n16:94631:94647 [1] INFO Using internal Network IB
+p9r3n16:94631:94647 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n16:94633:94649 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n16:94630:94646 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n16:94630:94646 [0] INFO Using internal Network IB
+p9r3n16:94630:94646 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n16:94633:94649 [3] INFO Using internal Network IB
+p9r3n16:94633:94649 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n16:94633:94649 [3] INFO comm 0x3fff5d846430 rank 7 nranks 8
+p9r3n16:94633:94649 [3] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94633:94649 [3] INFO NET/Socket : 1 interfaces found
+p9r3n16:94633:94649 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r3n16:94630:94646 [0] INFO comm 0x3fff3d87cd10 rank 4 nranks 8
+p9r3n16:94630:94646 [0] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94630:94646 [0] INFO NET/Socket : 1 interfaces found
+p9r3n16:94630:94646 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r3n16:94631:94647 [1] INFO comm 0x3fff55856890 rank 5 nranks 8
+p9r3n16:94632:94648 [2] INFO comm 0x3fff4d846420 rank 6 nranks 8
+p9r3n16:94631:94647 [1] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94631:94647 [1] INFO NET/Socket : 1 interfaces found
+p9r3n16:94632:94648 [2] INFO NET : Using interface ib0:10.1.1.52<0>
+p9r3n16:94632:94648 [2] INFO NET/Socket : 1 interfaces found
+p9r3n16:94631:94647 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r3n16:94632:94648 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r3n15:116717:116749 [0] INFO comm 0x3fff499a1500 rank 0 nranks 8
+p9r3n15:116717:116749 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r3n15:116720:116752 [3] INFO comm 0x3fff658b8a90 rank 3 nranks 8
+p9r3n15:116720:116752 [3] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116720:116752 [3] INFO NET/Socket : 1 interfaces found
+p9r3n15:116720:116752 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r3n15:116719:116739 [2] INFO comm 0x3fff518447e0 rank 2 nranks 8
+p9r3n15:116719:116739 [2] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116719:116739 [2] INFO NET/Socket : 1 interfaces found
+p9r3n15:116719:116739 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r3n15:116718:116742 [1] INFO comm 0x3fff49844a00 rank 1 nranks 8
+p9r3n15:116718:116742 [1] INFO NET : Using interface ib0:10.1.1.51<0>
+p9r3n15:116718:116742 [1] INFO NET/Socket : 1 interfaces found
+p9r3n15:116718:116742 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r3n15:116717:116749 [0] INFO Using 256 threads
+p9r3n15:116717:116749 [0] INFO Min Comp Cap 7
+p9r3n15:116717:116749 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+p9r3n15:116717:116749 [0] INFO Ring 00 :    0   1   2   3   4   5   6   7
+p9r3n16:94631:94647 [1] INFO 5[94631] -> 6[94632] via direct shared memory
+p9r3n16:94630:94646 [0] INFO 3 -> 4 via NET/IB/0
+p9r3n16:94630:94646 [0] INFO Ring 00 : 4[0] -> 5[1] via P2P/IPC
+p9r3n16:94632:94648 [2] INFO Ring 00 : 6[2] -> 7[3] via P2P/IPC
+p9r3n15:116717:116749 [0] INFO 7 -> 0 via NET/IB/0
+p9r3n15:116718:116742 [1] INFO 1[116718] -> 2[116719] via direct shared memory
+p9r3n15:116719:116739 [2] INFO Ring 00 : 2[2] -> 3[3] via P2P/IPC
+p9r3n15:116717:116749 [0] INFO Ring 00 : 0[0] -> 1[1] via P2P/IPC
+p9r3n16:94633:94649 [3] INFO NET/IB: Dev 0 Port 1 qpn 158469 mtu 5 LID 10
+p9r3n15:116720:116752 [3] INFO NET/IB: Dev 0 Port 1 qpn 77807 mtu 5 LID 26
+p9r3n15:116717:116749 [0] INFO Launch mode Parallel
+Stopping train at rank 1
+Stopping train at rank 4
+Stopping train at rank 2
+Stopping train at rank 5
+Stopping train at rank 7
+Stopping train at rank 6
+Stopping train at rank 3
+Stopping train at rank 0
+clock 466.27175855636597

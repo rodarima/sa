@@ -1,0 +1,1334 @@
+unload bsc/commands (PATH, MANPATH) 
+unload CUDA/9.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+unload OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+unload GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load JAVA/ibm_8.0.5.15 (PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, JAVA_HOME,
+JAVA_ROOT, JAVA_BINDIR, SDK_HOME, JRE_HOME) 
+load OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+load CUDA/9.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load ATLAS/3.10.3 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+INFO:tensorflow:Using config: {'_model_dir': '/gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_resnet_v2_101.32', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff58814710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp0re78q4r
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp0re78q4r', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff39054748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpkbh66tf_
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpnr4x1jen
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpdx6iinqt
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpljf82xnr
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmptltpsnko
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp778qqfj7
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpdx6iinqt', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff55854748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpnr4x1jen', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff69014748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpkbh66tf_', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff44154748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpljf82xnr', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff2bd54748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmptltpsnko', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff312546a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp778qqfj7', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff42ad4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpbbi4gge8
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpp0kofb7g
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpbbi4gge8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5ca14748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpulvh5q7e
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpx00_5x5h
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpp0kofb7g', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4a0d46a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpx00_5x5h', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff45214748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpea0yxx70
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp7a2_5j_b
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpulvh5q7e', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff43b54748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpea0yxx70', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff35ad46a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpw9vx71gg
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp7a2_5j_b', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff62c14748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp31d8g2cf
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpw9vx71gg', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff57ad4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp31d8g2cf', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5eed4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpmniq37hy
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpgt65oh1e
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpmniq37hy', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff53794748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp1oojokt4
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp9yr94egd
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp6gv0t0an
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpabr5_cvf
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpb7ufgb3j
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpda6jwqag
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmph9w4yu6c
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpw2gp6def
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpba4tpot2
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpgt65oh1e', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff57114748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpgstd4jw6
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpfq3iabgq
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp1oojokt4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff67cd4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp6gv0t0an', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff537d46a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpda6jwqag', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff36694748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp9yr94egd', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff41ed4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmphu_qk06p
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpabr5_cvf', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff646d4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmpiptle45u
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpw2gp6def', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5fe94748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpb7ufgb3j', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff3b854748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpfq3iabgq', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff493d4748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpba4tpot2', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5d414748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmph9w4yu6c', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff52394748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpgstd4jw6', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff51e94748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029752/tmp7ang90hk
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmphu_qk06p', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff68714748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmpiptle45u', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff47d54748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029752/tmp7ang90hk', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff62394748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:00:32.521983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:32.522039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:32.543193: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-13 12:00:32.543234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:00:32.824513: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:32.824555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:32.824567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:32.825171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14860 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:32.834388: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:32.834428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:32.842889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:32.842943: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:32.842955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:32.843756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14850 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:32.853000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:32.853020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:00:33.004616: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.004653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:33.007494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.007527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.028566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.028596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:33.131162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-13 12:00:33.131205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:33.146429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.146463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.172936: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.172975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:33.253273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.253305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:33.253486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.253507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:33.263961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.263982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:33.269123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.269156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:33.281603: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.281644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.289351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.289395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:33.289405: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:33.290008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.314636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.314682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:33.314691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:33.315151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14850 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.344452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.36GiB
+2018-12-13 12:00:33.344493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.399253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.399294: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.422185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.422216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:33.433381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.433428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:33.432983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.433031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:33.433438: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:33.433042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:33.434068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.433710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.442066: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.442092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:33.442100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:33.442554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.454267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.454313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:33.454325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:33.454807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.469657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.469703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:33.469713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:33.470302: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.533973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.534017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:33.534026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:33.534471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.539377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.539403: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:33.539411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:33.539849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.555636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.555669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:33.555678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:33.556122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.557817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.557853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:33.557863: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:33.558315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.592543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.592589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:33.592600: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:33.593199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.608501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.608535: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:33.608544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:33.608977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.681857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.681905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:33.681917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:33.682407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.691472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.691505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:33.691515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:33.691990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.822734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-13 12:00:33.822778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:33.891732: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.891770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:33.905741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.905784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.905831: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.905849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:33.906038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.906058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:33.958429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.958459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:33.966262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:33.966308: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:33.966320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:33.966790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14862 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:33.969498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.969540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:33.985424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:33.985464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:34.000233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-13 12:00:34.000266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:00:34.128762: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.128809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:34.128820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:34.129310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14852 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.216977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.217024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:34.217035: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:34.217646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.226569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.226618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:34.226629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:34.227273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.231061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.231081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:34.231089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:34.231523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.232785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.232806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:34.232815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:34.233254: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.255186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.255229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:34.255241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:34.255726: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.268660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.268707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:34.268718: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:34.269280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.270741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.270774: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:34.270783: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:34.271278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:00:34.277410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:34.277448: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:00:34.277458: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:00:34.277915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14855 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:00:49.489889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:49.489934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:49.871709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:49.871755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:49.871770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:49.872444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:00:50.614846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:50.614891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:51.016234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:51.016285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:51.016299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:51.017022: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-13 12:00:53.154057: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:53.154095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:00:53.456848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-13 12:00:53.456893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:00:53.690761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:00:53.690800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:00:53.836931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:53.836977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:00:53.836991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:00:53.837681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14855 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:00:53.869149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:53.869195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:00:53.869210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:00:53.869890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-13 12:00:54.092044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:00:54.092087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:00:54.092101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:00:54.092758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-13 12:01:47.724328: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8022 of 20000
+2018-12-13 12:01:47.822280: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7887 of 20000
+2018-12-13 12:01:47.839400: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7960 of 20000
+2018-12-13 12:01:47.847060: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7849 of 20000
+2018-12-13 12:01:47.862494: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 9662 of 20000
+2018-12-13 12:01:47.899855: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7917 of 20000
+2018-12-13 12:01:47.902436: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7980 of 20000
+2018-12-13 12:01:47.915133: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7910 of 20000
+2018-12-13 12:01:48.021106: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8409 of 20000
+2018-12-13 12:01:48.118556: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7909 of 20000
+2018-12-13 12:01:48.158226: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8256 of 20000
+2018-12-13 12:01:48.203890: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7929 of 20000
+2018-12-13 12:01:48.267883: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8011 of 20000
+2018-12-13 12:01:48.351862: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7936 of 20000
+2018-12-13 12:01:48.402987: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7967 of 20000
+2018-12-13 12:01:48.418812: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7708 of 20000
+2018-12-13 12:01:48.507835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8276 of 20000
+2018-12-13 12:01:48.753157: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7303 of 20000
+2018-12-13 12:01:49.020756: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8266 of 20000
+2018-12-13 12:01:49.046649: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7218 of 20000
+2018-12-13 12:01:49.094270: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7848 of 20000
+2018-12-13 12:01:49.165391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7214 of 20000
+2018-12-13 12:01:50.351332: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 9462 of 20000
+2018-12-13 12:01:50.466107: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8457 of 20000
+2018-12-13 12:01:51.919885: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7811 of 20000
+2018-12-13 12:01:57.724583: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16180 of 20000
+2018-12-13 12:01:57.822286: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15844 of 20000
+2018-12-13 12:01:57.838509: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15850 of 20000
+2018-12-13 12:01:57.846120: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15663 of 20000
+2018-12-13 12:01:57.862497: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 19353 of 20000
+2018-12-13 12:01:57.902270: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15791 of 20000
+2018-12-13 12:01:57.905358: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16126 of 20000
+2018-12-13 12:01:57.914282: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15817 of 20000
+2018-12-13 12:01:58.022658: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16584 of 20000
+2018-12-13 12:01:58.118735: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15836 of 20000
+2018-12-13 12:01:58.158115: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16762 of 20000
+2018-12-13 12:01:58.204038: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15720 of 20000
+2018-12-13 12:01:58.267469: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16116 of 20000
+2018-12-13 12:01:58.356426: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15907 of 20000
+2018-12-13 12:01:58.402831: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15730 of 20000
+2018-12-13 12:01:58.418174: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15547 of 20000
+2018-12-13 12:01:58.507638: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16606 of 20000
+2018-12-13 12:01:58.626677: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:01:58.752062: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 14968 of 20000
+2018-12-13 12:01:59.020584: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16468 of 20000
+2018-12-13 12:01:59.048299: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 14952 of 20000
+2018-12-13 12:01:59.095537: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15916 of 20000
+2018-12-13 12:01:59.165808: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 14873 of 20000
+2018-12-13 12:02:00.351130: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 18025 of 20000
+2018-12-13 12:02:00.464322: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16951 of 20000
+2018-12-13 12:02:00.747431: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 6203 of 20000
+2018-12-13 12:02:01.830571: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:01.916998: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15687 of 20000
+2018-12-13 12:02:02.425583: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:02.591728: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:02.647357: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:02.975218: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.049729: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.116777: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.189333: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.224762: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.228582: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.241690: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.340615: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.357930: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.359940: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.596833: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8474 of 20000
+2018-12-13 12:02:03.763242: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.845717: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:03.859661: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:04.055508: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:04.109522: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:04.312076: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:04.574314: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:04.782886: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:05.149398: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:05.362743: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7514 of 20000
+2018-12-13 12:02:06.833430: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:08.587616: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5500 of 20000
+2018-12-13 12:02:08.892856: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5329 of 20000
+2018-12-13 12:02:09.764219: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5541 of 20000
+2018-12-13 12:02:09.873046: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5728 of 20000
+2018-12-13 12:02:10.751060: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 12997 of 20000
+2018-12-13 12:02:13.595456: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 18417 of 20000
+2018-12-13 12:02:15.263283: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:15.360015: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16136 of 20000
+2018-12-13 12:02:18.588501: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 12147 of 20000
+2018-12-13 12:02:18.887089: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 11343 of 20000
+2018-12-13 12:02:19.764112: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 11311 of 20000
+2018-12-13 12:02:19.834748: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:19.870470: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 12693 of 20000
+2018-12-13 12:02:20.749808: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 19316 of 20000
+2018-12-13 12:02:21.773702: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:28.586767: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 18927 of 20000
+2018-12-13 12:02:28.890267: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 17452 of 20000
+2018-12-13 12:02:29.764224: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 18301 of 20000
+2018-12-13 12:02:29.870617: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 19874 of 20000
+2018-12-13 12:02:30.032022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:30.120730: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:32.042379: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:02:32.475001: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpdx6iinqt/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_resnet_v2_101.32/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpx00_5x5h/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpnr4x1jen/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp9yr94egd/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpb7ufgb3j/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpfq3iabgq/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpw2gp6def/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp7a2_5j_b/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpp0kofb7g/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpljf82xnr/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpmniq37hy/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmptltpsnko/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp1oojokt4/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpea0yxx70/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp0re78q4r/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp778qqfj7/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpabr5_cvf/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpgt65oh1e/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpbbi4gge8/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmphu_qk06p/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpba4tpot2/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpda6jwqag/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpgstd4jw6/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpiptle45u/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp31d8g2cf/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpw9vx71gg/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpulvh5q7e/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmph9w4yu6c/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp7ang90hk/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmpkbh66tf_/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029752/tmp6gv0t0an/model.ckpt.
+INFO:tensorflow:loss = 2.5080137, step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.5080137, global_step = 0
+INFO:tensorflow:loss = 2.3172145, step = 0
+INFO:tensorflow:accuracy = 0.140625, loss = 2.3172145, global_step = 0
+INFO:tensorflow:loss = 2.3946602, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.3946602, global_step = 0
+INFO:tensorflow:loss = 2.4154701, step = 0
+INFO:tensorflow:accuracy = 0.140625, loss = 2.4154701, global_step = 0
+INFO:tensorflow:loss = 2.443766, step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.443766, global_step = 0
+INFO:tensorflow:loss = 2.4184234, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.4184234, global_step = 0
+INFO:tensorflow:loss = 2.4865158, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.4865158, global_step = 0
+INFO:tensorflow:loss = 2.4243865, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.4243865, global_step = 0
+INFO:tensorflow:loss = 2.4245052, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.4245052, global_step = 0
+INFO:tensorflow:loss = 2.3863628, step = 0
+INFO:tensorflow:accuracy = 0.0625, loss = 2.3863628, global_step = 0
+INFO:tensorflow:loss = 2.3580582, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3580582, global_step = 0
+INFO:tensorflow:loss = 2.3783588, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.3783588, global_step = 0
+INFO:tensorflow:loss = 2.4215345, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.4215345, global_step = 0
+INFO:tensorflow:loss = 2.419753, step = 0
+INFO:tensorflow:accuracy = 0.15625, loss = 2.419753, global_step = 0
+INFO:tensorflow:loss = 2.388229, step = 0
+INFO:tensorflow:accuracy = 0.15625, loss = 2.388229, global_step = 0
+INFO:tensorflow:loss = 2.3537378, step = 0
+INFO:tensorflow:accuracy = 0.1875, loss = 2.3537378, global_step = 0
+INFO:tensorflow:loss = 2.463803, step = 0
+INFO:tensorflow:accuracy = 0.0625, loss = 2.463803, global_step = 0
+INFO:tensorflow:loss = 2.5394356, step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.5394356, global_step = 0
+INFO:tensorflow:loss = 2.415609, step = 0
+INFO:tensorflow:accuracy = 0.140625, loss = 2.415609, global_step = 0
+INFO:tensorflow:loss = 2.387779, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.387779, global_step = 0
+INFO:tensorflow:loss = 2.3583963, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3583963, global_step = 0
+INFO:tensorflow:loss = 2.5252514, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.5252514, global_step = 0
+INFO:tensorflow:loss = 2.4753003, step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.4753003, global_step = 0
+INFO:tensorflow:loss = 2.4422662, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.4422662, global_step = 0
+INFO:tensorflow:loss = 2.5843472, step = 0
+INFO:tensorflow:accuracy = 0.03125, loss = 2.5843472, global_step = 0
+INFO:tensorflow:loss = 2.438241, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.438241, global_step = 0
+INFO:tensorflow:loss = 2.3759363, step = 0
+INFO:tensorflow:accuracy = 0.140625, loss = 2.3759363, global_step = 0
+INFO:tensorflow:loss = 2.474543, step = 0
+INFO:tensorflow:accuracy = 0.0625, loss = 2.474543, global_step = 0
+INFO:tensorflow:loss = 2.588963, step = 0
+INFO:tensorflow:accuracy = 0.03125, loss = 2.588963, global_step = 0
+INFO:tensorflow:loss = 2.452763, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.452763, global_step = 0
+INFO:tensorflow:loss = 2.3790956, step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3790956, global_step = 0
+INFO:tensorflow:loss = 2.4285293, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.4285293, global_step = 0
+INFO:tensorflow:global_step/sec: 2.17382
+INFO:tensorflow:global_step/sec: 2.18078
+INFO:tensorflow:global_step/sec: 2.18556
+INFO:tensorflow:global_step/sec: 2.1815
+INFO:tensorflow:global_step/sec: 2.20967
+INFO:tensorflow:global_step/sec: 2.17802
+INFO:tensorflow:global_step/sec: 2.18966
+INFO:tensorflow:global_step/sec: 2.23083
+INFO:tensorflow:global_step/sec: 2.18048
+INFO:tensorflow:global_step/sec: 2.17379
+INFO:tensorflow:global_step/sec: 2.19383
+INFO:tensorflow:global_step/sec: 2.17573
+INFO:tensorflow:loss = 2.2768023, step = 100 (46.002 sec)
+INFO:tensorflow:global_step/sec: 2.19912
+INFO:tensorflow:global_step/sec: 2.1807
+INFO:tensorflow:global_step/sec: 2.19976
+INFO:tensorflow:accuracy = 0.109375, loss = 2.2768023, global_step = 100 (46.002 sec)
+INFO:tensorflow:global_step/sec: 2.17694
+INFO:tensorflow:global_step/sec: 2.18811
+INFO:tensorflow:global_step/sec: 2.17967
+INFO:tensorflow:global_step/sec: 2.17541
+INFO:tensorflow:global_step/sec: 2.17831
+INFO:tensorflow:loss = 2.2658482, step = 100 (45.856 sec)
+INFO:tensorflow:global_step/sec: 2.18748
+INFO:tensorflow:global_step/sec: 2.18439
+INFO:tensorflow:accuracy = 0.1484375, loss = 2.2658482, global_step = 100 (45.856 sec)
+INFO:tensorflow:global_step/sec: 2.70231
+INFO:tensorflow:loss = 2.368536, step = 100 (45.755 sec)
+INFO:tensorflow:global_step/sec: 2.58355
+INFO:tensorflow:global_step/sec: 2.20324
+INFO:tensorflow:loss = 2.298226, step = 100 (45.841 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.368536, global_step = 100 (45.755 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.298226, global_step = 100 (45.840 sec)
+INFO:tensorflow:global_step/sec: 2.17991
+INFO:tensorflow:loss = 2.3556967, step = 100 (45.862 sec)
+INFO:tensorflow:loss = 2.337986, step = 100 (45.256 sec)
+INFO:tensorflow:loss = 2.4310749, step = 100 (45.670 sec)
+INFO:tensorflow:accuracy = 0.0625, loss = 2.3556967, global_step = 100 (45.861 sec)
+INFO:tensorflow:loss = 2.2319357, step = 100 (45.914 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.2319357, global_step = 100 (45.914 sec)
+INFO:tensorflow:loss = 2.4453785, step = 100 (45.962 sec)
+INFO:tensorflow:loss = 2.4100895, step = 100 (45.460 sec)
+INFO:tensorflow:loss = 2.313942, step = 100 (46.003 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.4310749, global_step = 100 (45.670 sec)
+INFO:tensorflow:loss = 2.3279083, step = 100 (45.583 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.337986, global_step = 100 (45.256 sec)
+INFO:tensorflow:loss = 2.2963095, step = 100 (44.827 sec)
+INFO:tensorflow:accuracy = 0.140625, loss = 2.313942, global_step = 100 (46.003 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.4453785, global_step = 100 (45.962 sec)
+INFO:tensorflow:loss = 2.2765036, step = 100 (45.473 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.4100895, global_step = 100 (45.460 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.3279083, global_step = 100 (45.582 sec)
+INFO:tensorflow:loss = 2.4871852, step = 100 (45.702 sec)
+INFO:tensorflow:loss = 2.35961, step = 100 (45.857 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.2963095, global_step = 100 (44.827 sec)
+INFO:tensorflow:loss = 2.2826934, step = 100 (45.937 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.2765036, global_step = 100 (45.473 sec)
+INFO:tensorflow:loss = 2.2813442, step = 100 (45.969 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.4871852, global_step = 100 (45.702 sec)
+INFO:tensorflow:accuracy = 0.0703125, loss = 2.35961, global_step = 100 (45.857 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.2826934, global_step = 100 (45.937 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.2813442, global_step = 100 (45.969 sec)
+INFO:tensorflow:loss = 2.418181, step = 100 (45.908 sec)
+INFO:tensorflow:loss = 2.3741574, step = 100 (45.879 sec)
+INFO:tensorflow:accuracy = 0.09375, loss = 2.418181, global_step = 100 (45.908 sec)
+INFO:tensorflow:loss = 2.397159, step = 100 (45.715 sec)
+INFO:tensorflow:loss = 2.3426795, step = 100 (45.780 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3741574, global_step = 100 (45.879 sec)
+INFO:tensorflow:global_step/sec: 2.62571
+INFO:tensorflow:accuracy = 0.1640625, loss = 2.397159, global_step = 100 (45.715 sec)
+INFO:tensorflow:accuracy = 0.171875, loss = 2.3426795, global_step = 100 (45.779 sec)
+INFO:tensorflow:global_step/sec: 2.70161
+INFO:tensorflow:global_step/sec: 2.60741
+INFO:tensorflow:loss = 2.3650525, step = 100 (38.707 sec)
+INFO:tensorflow:loss = 2.3061028, step = 100 (45.389 sec)
+INFO:tensorflow:loss = 2.2894218, step = 100 (45.875 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.3650525, global_step = 100 (38.707 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.3061028, global_step = 100 (45.389 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.2894218, global_step = 100 (45.874 sec)
+INFO:tensorflow:global_step/sec: 2.60844
+INFO:tensorflow:loss = 2.3850448, step = 100 (37.006 sec)
+INFO:tensorflow:accuracy = 0.0859375, loss = 2.3850448, global_step = 100 (37.006 sec)
+INFO:tensorflow:loss = 2.3138921, step = 100 (37.016 sec)
+INFO:tensorflow:loss = 2.3639977, step = 100 (38.085 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3639977, global_step = 100 (38.084 sec)
+INFO:tensorflow:accuracy = 0.1171875, loss = 2.3138921, global_step = 100 (37.016 sec)
+INFO:tensorflow:loss = 2.3575916, step = 100 (38.353 sec)
+INFO:tensorflow:loss = 2.3784704, step = 100 (38.338 sec)
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3575916, global_step = 100 (38.353 sec)
+INFO:tensorflow:accuracy = 0.0625, loss = 2.3784704, global_step = 100 (38.338 sec)
+INFO:tensorflow:global_step/sec: 2.25926
+INFO:tensorflow:global_step/sec: 2.23581
+INFO:tensorflow:loss = 2.3965468, step = 100 (44.732 sec)
+INFO:tensorflow:loss = 2.393203, step = 100 (44.270 sec)
+INFO:tensorflow:accuracy = 0.0625, loss = 2.3965468, global_step = 100 (44.733 sec)
+INFO:tensorflow:accuracy = 0.0859375, loss = 2.393203, global_step = 100 (44.270 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9064525806583, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023285Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9121680265808, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.022957Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9064525806583, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023536Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9121680265808, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023246Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9129594024605, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023413Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9129594024605, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023741Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91627277274847, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023466Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91498691337375, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024079Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91268530887953, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024154Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91595164218245, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023567Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9158468382997, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024079Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91720795413954, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024153Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91729529195234, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024152Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91498691337375, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024357Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91627277274847, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023740Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91715286417588, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023571Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9179778733179, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024040Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91797652964897, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024041Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9158468382997, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024357Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.917693015931, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023650Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91720795413954, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024408Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91595164218245, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023800Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91729529195234, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024408Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91180660243916, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024283Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91715286417588, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023824Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91252542132267, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024200Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9179778733179, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024276Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91797652964897, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024298Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.917693015931, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023845Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91268530887953, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024424Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9118482534783, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024155Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91252542132267, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024462Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9118482534783, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024530Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91189930961568, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024283Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9122513289944, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024096Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91180660243916, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024546Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91189930961568, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024546Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9122513289944, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024349Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91332351819608, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024221Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9097025769444, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024350Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91732216514166, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024114Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91229029305163, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023399Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91332351819608, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024494Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9097025769444, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024586Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91732216514166, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024741Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91162924983192, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023399Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91162924983192, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023790Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91229029305163, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023790Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9098073740459, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024921Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9127659245565, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.023938Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9098073740459, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025285Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9127659245565, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024857Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.90488740923504, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025371Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.92039382079534, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024834Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.90488740923504, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025676Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.92039382079534, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025125Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.92367788800843, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024598Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.9234024197418, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024759Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.92367788800843, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.024920Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.91401681991448, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025670Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.9234024197418, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025043Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.91401681991448, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.026259Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.92260826935788, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025319Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.92260826935788, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:03:38.025891Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 2.95878
+INFO:tensorflow:global_step/sec: 2.95886
+INFO:tensorflow:global_step/sec: 2.95887
+INFO:tensorflow:global_step/sec: 2.95887
+INFO:tensorflow:global_step/sec: 2.95887
+INFO:tensorflow:global_step/sec: 2.95881
+INFO:tensorflow:global_step/sec: 2.95879
+INFO:tensorflow:global_step/sec: 2.95886
+INFO:tensorflow:global_step/sec: 2.95879
+INFO:tensorflow:global_step/sec: 2.95882
+INFO:tensorflow:global_step/sec: 2.95881
+INFO:tensorflow:global_step/sec: 2.95884
+INFO:tensorflow:global_step/sec: 2.95881
+INFO:tensorflow:global_step/sec: 2.95885
+INFO:tensorflow:global_step/sec: 2.95885
+INFO:tensorflow:global_step/sec: 2.95879
+INFO:tensorflow:global_step/sec: 2.95886
+INFO:tensorflow:global_step/sec: 2.95882
+INFO:tensorflow:global_step/sec: 2.95885
+INFO:tensorflow:global_step/sec: 2.9588
+INFO:tensorflow:global_step/sec: 2.95881
+INFO:tensorflow:global_step/sec: 2.95882
+INFO:tensorflow:global_step/sec: 2.95881
+INFO:tensorflow:global_step/sec: 2.9588
+INFO:tensorflow:loss = 2.3042421, step = 200 (33.798 sec)
+INFO:tensorflow:loss = 2.3268967, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3042421, global_step = 200 (33.798 sec)
+INFO:tensorflow:loss = 2.3323092, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.104166664, loss = 2.3268967, global_step = 200 (33.797 sec)
+INFO:tensorflow:global_step/sec: 2.9587
+INFO:tensorflow:accuracy = 0.088541664, loss = 2.3323092, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3620865, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3475966, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3561985, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.2362788, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.114583336, loss = 2.3475966, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.140625, loss = 2.3561985, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3271875, step = 200 (33.798 sec)
+INFO:tensorflow:accuracy = 0.15625, loss = 2.2362788, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.140625, loss = 2.3271875, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.2813778, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.432487, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3490083, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.09375, loss = 2.2813778, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.13020833, loss = 2.432487, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.088541664, loss = 2.3490083, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3457193, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3113127, step = 200 (33.796 sec)
+INFO:tensorflow:loss = 2.3273025, step = 200 (33.798 sec)
+INFO:tensorflow:loss = 2.2948883, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.309319, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.13541667, loss = 2.3457193, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.2795424, step = 200 (33.797 sec)
+INFO:tensorflow:global_step/sec: 2.95885
+INFO:tensorflow:accuracy = 0.114583336, loss = 2.3113127, global_step = 200 (33.796 sec)
+INFO:tensorflow:loss = 2.3181472, step = 200 (33.798 sec)
+INFO:tensorflow:accuracy = 0.13541667, loss = 2.2795424, global_step = 200 (33.796 sec)
+INFO:tensorflow:accuracy = 0.088541664, loss = 2.3273025, global_step = 200 (33.798 sec)
+INFO:tensorflow:loss = 2.3794494, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.4045467, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.2948883, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.119791664, loss = 2.3181472, global_step = 200 (33.798 sec)
+INFO:tensorflow:global_step/sec: 2.95885
+INFO:tensorflow:accuracy = 0.15104167, loss = 2.309319, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.114583336, loss = 2.3620865, global_step = 200 (33.798 sec)
+INFO:tensorflow:accuracy = 0.119791664, loss = 2.3794494, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.104166664, loss = 2.4045467, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.2868316, step = 200 (33.790 sec)
+INFO:tensorflow:loss = 2.3378255, step = 200 (33.797 sec)
+INFO:tensorflow:global_step/sec: 2.95885
+INFO:tensorflow:accuracy = 0.104166664, loss = 2.3378255, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.2982366, step = 200 (33.798 sec)
+INFO:tensorflow:accuracy = 0.114583336, loss = 2.2868316, global_step = 200 (33.789 sec)
+INFO:tensorflow:global_step/sec: 2.95889
+INFO:tensorflow:loss = 2.3012736, step = 200 (33.799 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.2982366, global_step = 200 (33.798 sec)
+INFO:tensorflow:accuracy = 0.13541667, loss = 2.3012736, global_step = 200 (33.799 sec)
+INFO:tensorflow:global_step/sec: 2.95881
+INFO:tensorflow:loss = 2.3065002, step = 200 (33.798 sec)
+INFO:tensorflow:accuracy = 0.104166664, loss = 2.3065002, global_step = 200 (33.798 sec)
+INFO:tensorflow:loss = 2.3468552, step = 200 (33.792 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3468552, global_step = 200 (33.791 sec)
+INFO:tensorflow:loss = 2.4548101, step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3225856, step = 200 (33.796 sec)
+INFO:tensorflow:accuracy = 0.114583336, loss = 2.4548101, global_step = 200 (33.797 sec)
+INFO:tensorflow:loss = 2.3575602, step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.067708336, loss = 2.3575602, global_step = 200 (33.797 sec)
+INFO:tensorflow:accuracy = 0.083333336, loss = 2.3225856, global_step = 200 (33.797 sec)
+INFO:tensorflow:global_step/sec: 2.9585
+INFO:tensorflow:global_step/sec: 2.95878
+INFO:tensorflow:loss = 2.3293447, step = 200 (33.799 sec)
+INFO:tensorflow:loss = 2.3535116, step = 200 (33.801 sec)
+INFO:tensorflow:accuracy = 0.104166664, loss = 2.3293447, global_step = 200 (33.799 sec)
+INFO:tensorflow:accuracy = 0.0625, loss = 2.3535116, global_step = 200 (33.801 sec)
+INFO:tensorflow:loss = 2.3483157, step = 200 (33.803 sec)
+INFO:tensorflow:accuracy = 0.104166664, loss = 2.3483157, global_step = 200 (33.803 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.520001900033, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863282Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51856284519934, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.862677Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5154740690802, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863113Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51973562975496, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863359Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.13667335159585, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863517Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12658583343352, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.862956Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12923886635295, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863562Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.1261021393213, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863320Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51958041727477, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863602Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5196841152398, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863587Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12846466874421, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863790Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12809955881835, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863790Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51995573754425, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863419Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51963326977182, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863333Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.1252893255863, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863638Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12812487661444, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.863738Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5179707718015, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864450Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51857288037354, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864456Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51739609618832, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864398Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12452848496181, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864620Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12774777540568, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864624Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51933555672375, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864512Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5166187174939, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864331Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12295752167572, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864674Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12312674208164, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864695Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51871404193685, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864719Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51875150665245, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864099Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12180230069538, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864871Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12515874304745, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864513Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5194646770994, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864072Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51829457193585, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864074Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12201815406246, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864262Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12290289153057, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864262Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51907597846986, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864601Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51907597846986, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864601Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.1222992971498, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864282Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51633907680377, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864624Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12184760321304, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864796Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12184627078577, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864796Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5143655595116, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864742Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51854545089986, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864723Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12207411612695, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864793Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.11744136876115, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864916Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12143988133536, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864922Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51596711582502, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864034Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5152051355734, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864167Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12129464749637, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864268Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12043257599782, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.864348Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51559983924082, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865189Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.11953853487844, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865359Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51842904297797, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865718Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5143749252593, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865783Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.1244858460887, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866041Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.11544950373155, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865961Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51995975167281, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865523Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.12121070510398, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.865728Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.5203798980695, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866071Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.11985164816858, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866296Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51949143782102, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866037Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.51954964241665, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866179Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.11702167464716, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866317Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.11741072436598, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.866395Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 189.50472468217455, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.868911Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 189.09938421480612, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:04:11.869149Z', 'extras': []}
+slurmstepd: error: *** JOB 1029752 ON p9r3n06 CANCELLED AT 2018-12-13T12:04:33 ***

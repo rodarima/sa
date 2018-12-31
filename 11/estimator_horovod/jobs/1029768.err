@@ -1,0 +1,307 @@
+unload bsc/commands (PATH, MANPATH) 
+unload CUDA/9.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+unload OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+unload GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load JAVA/ibm_8.0.5.15 (PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, JAVA_HOME,
+JAVA_ROOT, JAVA_BINDIR, SDK_HOME, JRE_HOME) 
+load OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+load CUDA/9.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load ATLAS/3.10.3 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+INFO:tensorflow:Using config: {'_model_dir': '/gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_resnet_v2_101.4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff59a94710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029768/tmp171d9j0h
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029768/tmpf1idm68j
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1029768/tmp2i78qj99
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029768/tmp171d9j0h', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff48c956a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029768/tmpf1idm68j', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff317d56a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1029768/tmp2i78qj99', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff39ad56a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /gpfs/home/sam14/sam14015/task/11/estimator_horovod/nets/resnet_v2.py:213: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:07:49.743547: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:07:49.743588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:07:49.809219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:07:49.809253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-13 12:07:49.914579: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:07:49.914620: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-13 12:07:49.934160: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-13 12:07:49.934334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-13 12:07:50.067605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:07:50.067646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:07:50.067658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:07:50.068248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14846 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-13 12:07:50.111206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:07:50.111247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-13 12:07:50.111256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-13 12:07:50.111796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-13 12:07:50.196510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:07:50.196553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-13 12:07:50.196563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-13 12:07:50.197041: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14846 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-13 12:07:50.229330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:07:50.229370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-13 12:07:50.229380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-13 12:07:50.229900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14850 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-13 12:08:41.899077: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8332 of 20000
+2018-12-13 12:08:42.753574: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7854 of 20000
+2018-12-13 12:08:43.158381: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8375 of 20000
+2018-12-13 12:08:44.054259: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7941 of 20000
+2018-12-13 12:08:51.898671: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16528 of 20000
+2018-12-13 12:08:52.752585: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15935 of 20000
+2018-12-13 12:08:53.158657: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16661 of 20000
+2018-12-13 12:08:54.051548: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16032 of 20000
+2018-12-13 12:08:56.311369: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:08:57.092711: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:08:57.695274: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-13 12:08:58.601033: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029768/tmp2i78qj99/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029768/tmp171d9j0h/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /scratch/tmp/1029768/tmpf1idm68j/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_resnet_v2_101.4/model.ckpt.
+INFO:tensorflow:loss = 2.4511328, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.4511328, global_step = 0
+INFO:tensorflow:loss = 2.4037406, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.4037406, global_step = 0
+INFO:tensorflow:loss = 2.3394315, step = 0
+INFO:tensorflow:accuracy = 0.171875, loss = 2.3394315, global_step = 0
+INFO:tensorflow:loss = 2.36292, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.36292, global_step = 0
+INFO:tensorflow:global_step/sec: 2.72308
+INFO:tensorflow:global_step/sec: 2.78356
+INFO:tensorflow:global_step/sec: 2.8583
+INFO:tensorflow:global_step/sec: 2.78997
+INFO:tensorflow:loss = 2.4517837, step = 100 (36.724 sec)
+INFO:tensorflow:accuracy = 0.0859375, loss = 2.4517837, global_step = 100 (36.724 sec)
+INFO:tensorflow:loss = 2.3698604, step = 100 (35.926 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3698604, global_step = 100 (35.926 sec)
+INFO:tensorflow:loss = 2.3857808, step = 100 (35.843 sec)
+INFO:tensorflow:loss = 2.3256607, step = 100 (34.987 sec)
+INFO:tensorflow:accuracy = 0.1484375, loss = 2.3857808, global_step = 100 (35.843 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3256607, global_step = 100 (34.987 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 194.15315284735692, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.400191Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.15315284735692, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.400473Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 194.1487098551384, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.400517Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.1487098551384, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.400764Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 194.1514789781213, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.401151Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.1514789781213, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.401372Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 194.15137085165472, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.401103Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.15137085165472, 'unit': None, 'global_step': 111, 'timestamp': '2018-12-13T11:09:54.401499Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.01757
+INFO:tensorflow:global_step/sec: 3.01756
+INFO:tensorflow:global_step/sec: 3.01755
+INFO:tensorflow:global_step/sec: 3.01757
+INFO:tensorflow:loss = 2.3007407, step = 200 (33.139 sec)
+INFO:tensorflow:accuracy = 0.083333336, loss = 2.3007407, global_step = 200 (33.139 sec)
+INFO:tensorflow:loss = 2.329703, step = 200 (33.139 sec)
+INFO:tensorflow:loss = 2.318147, step = 200 (33.139 sec)
+INFO:tensorflow:accuracy = 0.114583336, loss = 2.329703, global_step = 200 (33.139 sec)
+INFO:tensorflow:accuracy = 0.13541667, loss = 2.318147, global_step = 200 (33.139 sec)
+INFO:tensorflow:loss = 2.308705, step = 200 (33.140 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.308705, global_step = 200 (33.140 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.5668765211385, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563069Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.5697449261166, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563187Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.9914865473368, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563333Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.98852009448976, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563286Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.5674243729424, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563290Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.9852193638309, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563496Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.56838887881315, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563577Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.9888974866085, 'unit': None, 'global_step': 211, 'timestamp': '2018-12-13T11:10:27.563756Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.00848
+INFO:tensorflow:global_step/sec: 3.00847
+INFO:tensorflow:global_step/sec: 3.00846
+INFO:tensorflow:global_step/sec: 3.00847
+INFO:tensorflow:loss = 2.2676907, step = 300 (33.239 sec)
+INFO:tensorflow:loss = 2.2801547, step = 300 (33.239 sec)
+INFO:tensorflow:accuracy = 0.08203125, loss = 2.2676907, global_step = 300 (33.239 sec)
+INFO:tensorflow:accuracy = 0.12890625, loss = 2.2801547, global_step = 300 (33.239 sec)
+INFO:tensorflow:loss = 2.2478113, step = 300 (33.240 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.2478113, global_step = 300 (33.240 sec)
+INFO:tensorflow:loss = 2.3405771, step = 300 (33.243 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.3405771, global_step = 300 (33.244 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.26442355570052, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.781793Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.26532521192445, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.781770Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.66234433203647, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.782001Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.26629227540417, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.781958Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.66394699001916, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.782031Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.66223232673772, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.782113Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.2657166743446, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.782178Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 192.66320304365357, 'unit': None, 'global_step': 311, 'timestamp': '2018-12-13T11:11:00.782359Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.02004
+INFO:tensorflow:global_step/sec: 3.02001
+INFO:tensorflow:global_step/sec: 3.02005
+INFO:tensorflow:global_step/sec: 3.02
+INFO:tensorflow:loss = 2.3258476, step = 400 (33.112 sec)
+INFO:tensorflow:accuracy = 0.115625, loss = 2.3258476, global_step = 400 (33.112 sec)
+INFO:tensorflow:loss = 2.332961, step = 400 (33.113 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.332961, global_step = 400 (33.113 sec)
+INFO:tensorflow:loss = 2.3445296, step = 400 (33.113 sec)
+INFO:tensorflow:accuracy = 0.10625, loss = 2.3445296, global_step = 400 (33.113 sec)
+INFO:tensorflow:loss = 2.3232014, step = 400 (33.110 sec)
+INFO:tensorflow:accuracy = 0.121875, loss = 2.3232014, global_step = 400 (33.109 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.28394566750606, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884109Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.28330373905658, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884128Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 193.33982856868462, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884325Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 193.33996642868777, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884326Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.28422992661518, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884519Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.2842351455785, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884593Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 193.3397909705361, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884685Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 193.33808375149417, 'unit': None, 'global_step': 411, 'timestamp': '2018-12-13T11:11:33.884742Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.03546
+INFO:tensorflow:global_step/sec: 3.03542
+INFO:tensorflow:global_step/sec: 3.03541
+INFO:tensorflow:global_step/sec: 3.03545
+INFO:tensorflow:loss = 2.308675, step = 500 (32.944 sec)
+INFO:tensorflow:accuracy = 0.080729164, loss = 2.308675, global_step = 500 (32.944 sec)
+INFO:tensorflow:loss = 2.2958188, step = 500 (32.944 sec)
+INFO:tensorflow:accuracy = 0.119791664, loss = 2.2958188, global_step = 500 (32.944 sec)
+INFO:tensorflow:loss = 2.2843556, step = 500 (32.944 sec)
+INFO:tensorflow:accuracy = 0.106770836, loss = 2.2843556, global_step = 500 (32.944 sec)
+INFO:tensorflow:loss = 2.2786906, step = 500 (32.944 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.2786906, global_step = 500 (32.944 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.5103857132696, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.802279Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.5098042864188, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.802332Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.5110681409882, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.802392Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.4214765521043, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.802507Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.4211400050879, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.802534Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.42374933107763, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.802548Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.50959225062482, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.803568Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.4163214554905, 'unit': None, 'global_step': 511, 'timestamp': '2018-12-13T11:12:06.803756Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.04083
+INFO:tensorflow:global_step/sec: 3.04079
+INFO:tensorflow:global_step/sec: 3.04082
+INFO:tensorflow:global_step/sec: 3.0408
+INFO:tensorflow:loss = 2.2973428, step = 600 (32.886 sec)
+INFO:tensorflow:accuracy = 0.12276786, loss = 2.2973428, global_step = 600 (32.886 sec)
+INFO:tensorflow:loss = 2.3154566, step = 600 (32.886 sec)
+INFO:tensorflow:accuracy = 0.08035714, loss = 2.3154566, global_step = 600 (32.886 sec)
+INFO:tensorflow:loss = 2.2737107, step = 600 (32.886 sec)
+INFO:tensorflow:accuracy = 0.11383928, loss = 2.2737107, global_step = 600 (32.886 sec)
+INFO:tensorflow:loss = 2.27295, step = 600 (32.886 sec)
+INFO:tensorflow:accuracy = 0.12723215, loss = 2.27295, global_step = 600 (32.886 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.70041000986976, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.680339Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.70073847539962, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.680407Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.6590988603236, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.680552Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.6581474511987, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.680590Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.7011188911253, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.680721Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.6569998439614, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.680885Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.699647787769, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.682158Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.65555300295247, 'unit': None, 'global_step': 611, 'timestamp': '2018-12-13T11:12:39.682344Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.04125
+INFO:tensorflow:global_step/sec: 3.04123
+INFO:tensorflow:global_step/sec: 3.04126
+INFO:tensorflow:global_step/sec: 3.04126
+INFO:tensorflow:loss = 2.3077636, step = 700 (32.881 sec)
+INFO:tensorflow:loss = 2.2928267, step = 700 (32.882 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3077636, global_step = 700 (32.881 sec)
+INFO:tensorflow:accuracy = 0.1171875, loss = 2.2928267, global_step = 700 (32.882 sec)
+INFO:tensorflow:loss = 2.2826605, step = 700 (32.881 sec)
+INFO:tensorflow:accuracy = 0.1171875, loss = 2.2826605, global_step = 700 (32.881 sec)
+INFO:tensorflow:loss = 2.2633379, step = 700 (32.881 sec)
+INFO:tensorflow:accuracy = 0.13476562, loss = 2.2633379, global_step = 700 (32.881 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.83289194414232, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.562962Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.63160490983137, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563165Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.8331692723945, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563063Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.8335885654262, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563161Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.63157245236525, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563249Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 193.83365494865714, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563183Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.64113940634653, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563316Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 194.63269576922812, 'unit': None, 'global_step': 711, 'timestamp': '2018-12-13T11:13:12.563344Z', 'extras': []}
+INFO:tensorflow:Saving checkpoints for 750 into /scratch/tmp/1029768/tmp171d9j0h/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 750 into /scratch/tmp/1029768/tmp2i78qj99/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 750 into /gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_resnet_v2_101.4/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 750 into /scratch/tmp/1029768/tmpf1idm68j/model.ckpt.
+2018-12-13 12:13:39.113254: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-13 12:13:39.116817: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-13 12:13:39.125711: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-13 12:13:39.324334: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+INFO:tensorflow:Loss for final step: 2.3015132.
+INFO:tensorflow:Loss for final step: 2.2719605.
+INFO:tensorflow:Loss for final step: 2.3387516.
+INFO:tensorflow:Loss for final step: 2.315672.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2018-12-13-11:13:46
+INFO:tensorflow:Graph was finalized.
+2018-12-13 12:13:49.705410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-13 12:13:49.705478: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-13 12:13:49.705486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-13 12:13:49.705494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-13 12:13:49.705927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14846 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Restoring parameters from /gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_resnet_v2_101.4/model.ckpt-750
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2018-12-13-11:14:09
+INFO:tensorflow:Saving dict for global step 750: accuracy/accuracy = 0.1, global_step = 750, loss = 5402604.5

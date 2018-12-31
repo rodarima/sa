@@ -1,0 +1,39 @@
+#!/bin/bash
+#SBATCH --job-name horovod
+#SBATCH -D  /gpfs/home/sam14/sam14015/task/11/estimator_horovod/
+#SBATCH --output  /gpfs/home/sam14/sam14015/task/11/estimator_horovod/jobs/%j.out
+#SBATCH --error  /gpfs/home/sam14/sam14015/task/11/estimator_horovod/jobs/%j.err
+#SBATCH --nodes 1
+#SBATCH --tasks-per-node 4
+#SBATCH --cpus-per-task 40
+#SBATCH --gres gpu:4
+#SBATCH --time 0:10:00
+
+#MODEL=vgg_16
+MODEL=resnet_v2_101
+DATASET=cifar10
+DIR="/gpfs/home/sam14/sam14015/task/11/estimator_horovod"
+PROCS=$((1*4))
+
+source "$DIR/init_gpu_p9.sh"
+
+T0=$(date +%s)
+
+rm -rf "$DIR/models/${DATASET}_${MODEL}.$PROCS"
+
+mpirun -np $PROCS \
+    -bind-to none -map-by slot \
+    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH -x HOROVOD_MPI_THREADS_DISABLE=1 \
+    -mca pml ob1 -mca btl ^openib \
+    python tf_estimator_horovod.py --dataset_name=$DATASET --model_name="$MODEL" \
+    --train_dir="$DIR/datasets/data/$DATASET" \
+    --eval_dir="$DIR/datasets/data/$DATASET" \
+    --model_dir="$DIR/models/${DATASET}_${MODEL}.$PROCS" \
+    --num_classes=10 --batch_size=64 --learning_rate=0.0001 --log_every_n_steps=100 \
+    --save_summary_steps=50 --max_number_of_steps=750
+    
+T1=$(date +%s)
+
+rm -rf "$DIR/models/${DATASET}_${MODEL}.$PROCS"
+
+echo $PROCS $(($T1 - $T0)) $MODEL $DATASET >> $DIR/data.csv

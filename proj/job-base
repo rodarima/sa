@@ -1,18 +1,20 @@
 #!/bin/bash
 #SBATCH --job-name horovod
-#SBATCH -D  /gpfs/home/sam14/sam14015/task/proj/estimator_horovod/
-#SBATCH --output /gpfs/home/sam14/sam14015/task/proj/estimator_horovod/logs/_GPUS_.out
-#SBATCH --error /gpfs/home/sam14/sam14015/task/proj/estimator_horovod/jobs/_GPUS_.err
+#SBATCH -D  /gpfs/home/sam14/sam14015/task/proj/
+#SBATCH --output /gpfs/home/sam14/sam14015/task/proj/logs/_GPUS_._MODEL_.out
+#SBATCH --error /gpfs/home/sam14/sam14015/task/proj/logs/_GPUS_._MODEL_.err
 #SBATCH --nodes _NODES_
 #SBATCH --tasks-per-node _TASKS_PER_NODE_
 #SBATCH --cpus-per-task 40
 #SBATCH --gres gpu:_TASKS_PER_NODE_
 #SBATCH --time 0:10:00
+#SBATCH --qos debug
 
 #MODEL=vgg_16
-MODEL=resnet_v2_101
+#MODEL=resnet_v2_101
+MODEL="_MODEL_"
 DATASET=cifar10
-DIR="/gpfs/home/sam14/sam14015/task/proj/estimator_horovod"
+DIR="/gpfs/home/sam14/sam14015/task/proj"
 PROCS="_GPUS_"
 
 BATCH_SIZE=64
@@ -57,4 +59,5 @@ rm -rf "$DIR/models/${DATASET}_${MODEL}.$PROCS"
 
 echo $PROCS $(($T1 - $T0)) $MODEL $DATASET >> $DIR/data.csv
 
-./measure-times.sh "$DIR/logs/$PROCS.err" > "$DIR/logs/time.$PROCS.$MODEL.csv"
+./measure-times.sh "$DIR/logs/${PROCS}.${MODEL}.err" \
+	> "$DIR/logs/time.${PROCS}.${MODEL}.csv"

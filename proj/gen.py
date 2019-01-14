@@ -1,7 +1,9 @@
-import sys
+import sys, os
 import numpy as np
 
-MODEL = sys.argv[1]
+OUT_FILE = sys.argv[1]
+MODEL = os.path.basename(OUT_FILE).split('.')[0]
+
 GPUS = [1,2,4,8,16,32]
 LOG_DIR = "logs"
 
@@ -41,8 +43,7 @@ for gpu in GPUS:
 	table.append(row)
 
 a = np.asarray(table)
-fn = "{}/{}.csv".format(LOG_DIR, MODEL)
-np.savetxt(fn, a, delimiter=" ")
+np.savetxt(OUT_FILE, a, delimiter=" ")
 
 
 print(a)

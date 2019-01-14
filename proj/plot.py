@@ -5,12 +5,12 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-LOG_DIR = "logs"
+TABLE_DIR = "csv/table"
 GPUS = [1,2,4,8,16,32]
-MODELS = ["resnet_v2_101", "vgg19", "inception_v4"]
+MODELS = ["resnet_v2_101", "vgg_19", "inception_v4"]
 
 def plot_speedup(model):
-	fn = "{}/{}.csv".format(LOG_DIR, model)
+	fn = "{}/{}.csv".format(TABLE_DIR, model)
 	data = np.genfromtxt(fn, delimiter=" ", skip_header=False)
 	procs = data[:,0]
 	t = data[:,2]
@@ -51,7 +51,7 @@ def plot_speedup(model):
 	plt.close()
 
 def get_efficiency(model):
-	fn = "{}/{}.csv".format(LOG_DIR, model)
+	fn = "{}/{}.csv".format(TABLE_DIR, model)
 	data = np.genfromtxt(fn, delimiter=" ", skip_header=False)
 	procs = data[:,0]
 	t = data[:,2]
@@ -97,8 +97,8 @@ def plot_efficiency(models):
 def main():
 
 
-	#for model in models:
-	#	plot_model(model)
+	for model in MODELS:
+		plot_speedup(model)
 
 	plot_efficiency(MODELS)
 

@@ -26,7 +26,7 @@ The speedup measured using both metrics (time and speed), and shown as the
 number of GPUS grow, in the three models:
 
 ![Speedup plot for `resnet_v2_101`](fig/resnet_v2_101.png)
-![Speedup plot for `vgg19`](fig/vgg19.png)
+![Speedup plot for `vgg19`](fig/vgg_19.png)
 ![Speedup plot for `inception_v4`](fig/inception_v4.png)
 
 ### Efficiency

@@ -5,7 +5,7 @@ OUT_FILE = sys.argv[1]
 MODEL = os.path.basename(OUT_FILE).split('.')[0]
 
 GPUS = [1,2,4,8,16,32]
-LOG_DIR = "logs"
+CSV_DIR = "csv"
 
 serial_time = 0
 serial_speed = 0
@@ -14,7 +14,7 @@ table = []
 
 for gpu in GPUS:
 
-	fn = "{}/time.{}.{}.csv".format(LOG_DIR, gpu, MODEL)
+	fn = "{}/time/{}.{}.csv".format(CSV_DIR, gpu, MODEL)
 	try:
 		data = np.genfromtxt(fn, delimiter=" ",
 				skip_header=False)
@@ -46,4 +46,4 @@ a = np.asarray(table)
 np.savetxt(OUT_FILE, a, delimiter=" ")
 
 
-print(a)
+#print(a)

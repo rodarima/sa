@@ -22,7 +22,7 @@ With that information, the speedup is computed as:
 
 ### Speedup
 
-The speedup measured using both metrics (time and speed), and shown as the
+The speedup measured using both metrics (speed and wall time), and shown as the
 number of GPUS grow, in the three models:
 
 ![Speedup plot for `resnet_v2_101`](fig/resnet_v2_101.png)
@@ -31,21 +31,34 @@ number of GPUS grow, in the three models:
 
 ### Efficiency
 
-The efficiency is the computed for each model, and plot using the two speedup metrics:
+The efficiency is computed for each model, and plot using the two speedup metrics:
 
 ![Efficiency using speed](fig/efficiency_speed.png)
 ![Efficiency using time](fig/efficiency_time.png)
 
 
+### Results
 
+The last model, `inception_v4` was unable to finish due to queueing constraints
+in the supercomputer. Some of the datapoints are missing, but the overall trend
+is similar to the other two models.
+
+We see the first metric, using the speed, gives a very optimistic result, with
+an speedup very close to the theoretical maximum. However, when the wall time is
+used, the speedup is no longer linear but sublinear.
+
+With respect to the efficiency given by the first metric, it seems to be kept
+constant and higher than 0.94, with the best efficient model being `vgg_19`.
+However, the second metric lead to a very different result, showing the
+efficiency drop as the number of GPUs increase. It lowers below 0.4, which is
+quite a bad efficiency.
 
 ### Conclusions
 
-The measurement produced by the `average_example_per_sec` hooks in TensorFlow,
-leads to different time, compared with the wall time of the train process. We
-assume that the difference is due to overheads, such as the initialization or
-communication time.
+With these two contradictory metrics, we cannot establish a clear conclusion
+about what is the actual performance of the models, taking into account the
+speedup and the efficiency.
 
-A more in depth analysis could provide a better explanation on why such
-differences are observed, and which metric is more reliable to represent the
-speedup of the training process.
+More research is required to understand why they don't bring similar results.
+However, due to the large waiting times of the queue, we couldn't advance any
+further our investigation.

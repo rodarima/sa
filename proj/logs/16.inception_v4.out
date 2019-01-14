@@ -1,0 +1,170 @@
+p9r3n04:58377:58393 [0] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58377:58393 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n04:58377:58393 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n04:58377:58393 [0] INFO Using internal Network IB
+p9r3n04:58377:58393 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n04:58377:58393 [0] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58377:58393 [0] INFO NET/Socket : 1 interfaces found
+NCCL version 2.2.12+cuda9.2
+p9r3n04:58378:58403 [1] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58378:58403 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n04:58379:58394 [2] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58379:58394 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n04:58380:58392 [3] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58380:58392 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n08:129332:129350 [0] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129332:129350 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n08:129333:129349 [1] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129333:129349 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n08:129334:129352 [2] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129334:129352 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n11:79591:79620 [3] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79591:79620 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n11:79588:79621 [0] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79588:79621 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n11:79590:79618 [2] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79590:79618 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n11:79589:79619 [1] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79589:79619 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n05:49483:49499 [0] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49483:49499 [0] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n05:49486:49504 [3] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49486:49504 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n05:49484:49509 [1] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49484:49509 [1] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n05:49485:49498 [2] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49485:49498 [2] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n08:129335:129351 [3] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129335:129351 [3] INFO NET/IB : Using interface ib0 for sideband communication
+p9r3n04:58380:58392 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n04:58380:58392 [3] INFO Using internal Network IB
+p9r3n04:58380:58392 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n04:58379:58394 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n04:58378:58403 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n04:58378:58403 [1] INFO Using internal Network IB
+p9r3n04:58378:58403 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384p9r3n04:58379:58394 [2] INFO Using internal Network IB
+p9r3n04:58379:58394 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+
+p9r3n08:129332:129350 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n08:129332:129350 [0] INFO Using internal Network IB
+p9r3n08:129332:129350 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n11:79591:79620 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n11:79591:79620 [3] INFO Using internal Network IB
+p9r3n11:79591:79620 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n05:49483:49499 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n08:129333:129349 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n05:49483:49499 [0] INFO Using internal Network IB
+p9r3n05:49483:49499 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n11:79588:79621 [0] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n08:129333:129349 [1] INFO Using internal Network IB
+p9r3n08:129333:129349 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n08:129334:129352 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n08:129334:129352 [2] INFO Using internal Network IB
+p9r3n08:129334:129352 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n11:79588:79621 [0] INFO Using internal Network IB
+p9r3n11:79588:79621 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n08:129335:129351 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n08:129335:129351 [3] INFO Using internal Network IB
+p9r3n08:129335:129351 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n11:79590:79618 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n11:79589:79619 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n11:79589:79619 [1] INFO Using internal Network IB
+p9r3n11:79589:79619 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n11:79590:79618 [2] INFO Using internal Network IB
+p9r3n11:79590:79618 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n05:49486:49504 [3] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n05:49486:49504 [3] INFO Using internal Network IB
+p9r3n05:49486:49504 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n05:49484:49509 [1] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n05:49484:49509 [1] INFO Using internal Network IB
+p9r3n05:49484:49509 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n05:49485:49498 [2] INFO NET/IB: [1] mlx5_0:1/IB 
+p9r3n05:49485:49498 [2] INFO Using internal Network IB
+p9r3n05:49485:49498 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+p9r3n08:129335:129351 [3] INFO comm 0x3fff49877a40 rank 11 nranks 16
+p9r3n04:58380:58392 [3] INFO comm 0x3fff5186a6a0 rank 3 nranks 16
+p9r3n08:129335:129351 [3] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129335:129351 [3] INFO NET/Socket : 1 interfaces found
+p9r3n04:58380:58392 [3] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58380:58392 [3] INFO NET/Socket : 1 interfaces found
+p9r3n04:58380:58392 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r3n08:129335:129351 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r3n04:58378:58403 [1] INFO comm 0x3fff59865040 rank 1 nranks 16
+p9r3n04:58378:58403 [1] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58378:58403 [1] INFO NET/Socket : 1 interfaces found
+p9r3n04:58378:58403 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r3n04:58377:58393 [0] INFO comm 0x3fff51b09690 rank 0 nranks 16
+p9r3n04:58377:58393 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r3n04:58379:58394 [2] INFO comm 0x3fff35865380 rank 2 nranks 16
+p9r3n04:58379:58394 [2] INFO NET : Using interface ib0:10.1.1.40<0>
+p9r3n04:58379:58394 [2] INFO NET/Socket : 1 interfaces found
+p9r3n04:58379:58394 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r3n08:129332:129350 [0] INFO comm 0x3fff5d8acd20 rank 8 nranks 16
+p9r3n08:129332:129350 [0] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129332:129350 [0] INFO NET/Socket : 1 interfaces found
+p9r3n08:129332:129350 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r3n08:129333:129349 [1] INFO comm 0x3fff49877070 rank 9 nranks 16
+p9r3n08:129333:129349 [1] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129333:129349 [1] INFO NET/Socket : 1 interfaces found
+p9r3n08:129333:129349 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r3n08:129334:129352 [2] INFO comm 0x3fff39877e90 rank 10 nranks 16
+p9r3n08:129334:129352 [2] INFO NET : Using interface ib0:10.1.1.44<0>
+p9r3n08:129334:129352 [2] INFO NET/Socket : 1 interfaces found
+p9r3n11:79590:79618 [2] INFO comm 0x3fff4d867920 rank 14 nranks 16
+p9r3n11:79590:79618 [2] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79590:79618 [2] INFO NET/Socket : 1 interfaces found
+p9r3n11:79589:79619 [1] INFO comm 0x3fff5d878500 rank 13 nranks 16
+p9r3n11:79589:79619 [1] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79589:79619 [1] INFO NET/Socket : 1 interfaces found
+p9r3n11:79588:79621 [0] INFO comm 0x3fff618b25c0 rank 12 nranks 16
+p9r3n11:79591:79620 [3] INFO comm 0x3fff3d867df0 rank 15 nranks 16
+p9r3n11:79591:79620 [3] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79591:79620 [3] INFO NET/Socket : 1 interfaces found
+p9r3n11:79588:79621 [0] INFO NET : Using interface ib0:10.1.1.47<0>
+p9r3n11:79588:79621 [0] INFO NET/Socket : 1 interfaces found
+p9r3n05:49486:49504 [3] INFO comm 0x3fff49869fd0 rank 7 nranks 16
+p9r3n05:49483:49499 [0] INFO comm 0x3fff5d8c2570 rank 4 nranks 16
+p9r3n05:49486:49504 [3] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49486:49504 [3] INFO p9r3n05:49483:49499 [0] INFO NET : Using interface ib0:10.1.1.41<0>
+NET/Socket : 1 interfaces found
+p9r3n05:49483:49499 [0] INFO NET/Socket : 1 interfaces found
+p9r3n08:129334:129352 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r3n11:79590:79618 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r3n11:79589:79619 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r3n11:79591:79620 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r3n05:49486:49504 [3] INFO CUDA Dev 3, IB Ports : mlx5_0/1(SOC) 
+p9r3n11:79588:79621 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r3n05:49483:49499 [0] INFO CUDA Dev 0, IB Ports : mlx5_0/1(SOC) 
+p9r3n05:49484:49509 [1] INFO comm 0x3fff358a04c0 rank 5 nranks 16
+p9r3n05:49485:49498 [2] INFO comm 0x3fff5d8785e0 rank 6 nranks 16
+p9r3n05:49484:49509 [1] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49484:49509 [1] INFO NET/Socket : 1 interfaces found
+p9r3n05:49485:49498 [2] INFO NET : Using interface ib0:10.1.1.41<0>
+p9r3n05:49485:49498 [2] INFO NET/Socket : 1 interfaces found
+p9r3n05:49485:49498 [2] INFO CUDA Dev 2, IB Ports : mlx5_0/1(SOC) 
+p9r3n05:49484:49509 [1] INFO CUDA Dev 1, IB Ports : mlx5_0/1(SOC) 
+p9r3n04:58377:58393 [0] INFO Using 256 threads
+p9r3n04:58377:58393 [0] INFO Min Comp Cap 7
+p9r3n04:58377:58393 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+p9r3n04:58377:58393 [0] INFO Ring 00 :    0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+p9r3n11:79589:79619 [1] INFO 13[79589] -> 14[79590] via direct shared memory
+p9r3n08:129333:129349 [1] INFO 9[129333] -> 10[129334] via direct shared memory
+p9r3n04:58378:58403 [1] INFO 1[58378] -> 2[58379] via direct shared memory
+p9r3n04:58377:58393 [0] INFO 15 -> 0 via NET/IB/0
+p9r3n04:58379:58394 [2] INFO Ring 00 : 2[2] -> 3[3] via P2P/IPC
+p9r3n11:79588:79621 [0] INFO 11 -> 12 via NET/IB/0
+p9r3n04:58377:58393 [0] INFO Ring 00 : 0[0] -> 1[1] via P2P/IPC
+p9r3n08:129332:129350 [0] INFO 7 -> 8 via NET/IB/0
+p9r3n11:79588:79621 [0] INFO Ring 00 : 12[0] -> 13[1] via P2P/IPC
+p9r3n11:79590:79618 [2] INFO Ring 00 : 14[2] -> 15[3] via P2P/IPC
+p9r3n08:129332:129350 [0] INFO Ring 00 : 8[0] -> 9[1] via P2P/IPC
+p9r3n05:49483:49499 [0] INFO 3 -> 4 via NET/IB/0
+p9r3n05:49484:49509 [1] INFO 5[49484] -> 6[49485] via direct shared memory
+p9r3n08:129334:129352 [2] INFO Ring 00 : 10[2] -> 11[3] via P2P/IPC
+p9r3n05:49483:49499 [0] INFO Ring 00 : 4[0] -> 5[1] via P2P/IPC
+p9r3n05:49485:49498 [2] INFO Ring 00 : 6[2] -> 7[3] via P2P/IPC
+p9r3n04:58380:58392 [3] INFO NET/IB: Dev 0 Port 1 qpn 172819 mtu 5 LID 14
+p9r3n08:129335:129351 [3] INFO NET/IB: Dev 0 Port 1 qpn 132319 mtu 5 LID 25
+p9r3n11:79591:79620 [3] INFO NET/IB: Dev 0 Port 1 qpn 166491 mtu 5 LID 56
+p9r3n05:49486:49504 [3] INFO NET/IB: Dev 0 Port 1 qpn 31123 mtu 5 LID 50
+p9r3n04:58377:58393 [0] INFO Launch mode Parallel

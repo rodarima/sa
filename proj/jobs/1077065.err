@@ -1,0 +1,1018 @@
+unload bsc/commands (PATH, MANPATH) 
+unload CUDA/9.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+unload OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+unload GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load JAVA/ibm_8.0.5.15 (PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, JAVA_HOME,
+JAVA_ROOT, JAVA_BINDIR, SDK_HOME, JRE_HOME) 
+load OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+load CUDA/9.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load ATLAS/3.10.3 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+INFO:tensorflow:Using config: {'_model_dir': '/gpfs/home/sam14/sam14015/task/11/estimator_horovod/models/cifar10_vgg_19.32', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff44996780>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp24tf8o1t
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp95a_jcod
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp95a_jcod', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff53fd66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp24tf8o1t', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff339166a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp4xewvql4
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpdg0obe19
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpaawuu13w
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp4xewvql4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff46dd66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpy_6v9yfy
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpdg0obe19', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4e1166a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpy_6v9yfy', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4d1566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpaawuu13w', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4be566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp8xdossj2
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp8xdossj2', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff430166a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpoogqihf1
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpg3y3gqw8
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp1w3jgu_z
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpoogqihf1', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff63bd66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpg3y3gqw8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff68b166a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp1d7o4h86
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp1w3jgu_z', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff67b966a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp1d7o4h86', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff3a7966a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpyou1p5gz
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpu4op_0k0
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpkalyeeh0
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp_u6axgz8
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpu4op_0k0', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff42f56710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpyou1p5gz', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff39c16710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpkalyeeh0', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff55f566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp_u6axgz8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "1"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff396d6710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp0rav6nec
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp0rav6nec', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff472966a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp1kaf8gf9
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmps5r9ls76
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpwudumhkc
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp86rm0imm
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp1kaf8gf9', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff439d66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmps5r9ls76', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff34b16710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp33ufqu44
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpwudumhkc', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff39f566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmplage1kqi
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp86rm0imm', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff3c0d66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp33ufqu44', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff508166a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmplage1kqi', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff44f566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpa5uww2gs
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpa5uww2gs', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "2"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff4b3566a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp7lb8fd73
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp7lb8fd73', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff56fd66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpnwhkfdk4
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpzgicx93h
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp2rhxxpwo
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpxkvyf8ye
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpnwhkfdk4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff354966a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp295m2tbp
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmpbikb74a3
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpzgicx93h', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff5fbd66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp2rhxxpwo', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff2c7966a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /scratch/tmp/1077065/tmp3qmxjgg4
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpxkvyf8ye', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff699966a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmpbikb74a3', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff540d66a0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp295m2tbp', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff33396710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:Using config: {'_model_dir': '/scratch/tmp/1077065/tmp3qmxjgg4', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': gpu_options {
+  allow_growth: true
+  visible_device_list: "3"
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x3fff523d6710>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+ Date is now: 2018-12-31 20:17:02.089681
+ ---------------------- Starting train for 0 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 20 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 12 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 24 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 16 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 5 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 21 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 9 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 26 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 18 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 14 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 10 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 22 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 30 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 7 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 15 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 31 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 19 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 3 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 27 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 17 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 13 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 25 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 23 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 1 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 2 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 28 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 4 ----------------------
+INFO:tensorflow:Calling model_fn.
+ ---------------------- Starting train for 8 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 29 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 6 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+ ---------------------- Starting train for 11 ----------------------
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Scale of 0 disables regularizer.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-31 20:17:09.503172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.503214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-31 20:17:09.517862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.517907: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:09.539372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.539408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:09.553830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.553865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-31 20:17:09.634256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.634301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:09.634469: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.634490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:09.792510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:09.792552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:09.792562: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:09.793162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:09.816767: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:09.816816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:09.816825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:09.817403: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:09.820679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:09.820717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:09.820726: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:09.821206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:09.828647: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:09.828678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:09.828686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:09.829108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:09.876691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.876738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:09.922482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:09.922528: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:09.922537: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:09.923195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:09.924722: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:09.924743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:09.924752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:09.925186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+2018-12-31 20:17:09.995946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:09.995982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:10.014099: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.014137: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-31 20:17:10.206690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.206735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:10.237151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.237193: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:10.315743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.315781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:10.325921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.325963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-31 20:17:10.333534: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.333570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:10.339103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.339147: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-31 20:17:10.345008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.345043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+INFO:tensorflow:Graph was finalized.
+2018-12-31 20:17:10.359887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.35GiB
+2018-12-31 20:17:10.359931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:10.361600: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.361634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:10.362377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.362406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:10.363048: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.363079: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-31 20:17:10.436028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.436069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:10.436115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.436132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:10.453605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.453649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:10.454068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.454092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+2018-12-31 20:17:10.457518: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.457555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:10.528668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.528715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:10.528725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:10.529327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.564354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.564402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:10.564414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:10.565058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.567903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.567955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:10.567966: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:10.568621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.606176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.606219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:10.606228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:10.606697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Graph was finalized.
+2018-12-31 20:17:10.627641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.627677: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:10.627686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:10.628146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.631489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.631527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:10.631536: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:10.631994: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.650731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.650768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:10.650777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:10.651259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.659937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.659977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:10.659987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:10.660463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.661846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.661877: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:10.661886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:10.662332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14844 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.662818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.662865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:10.662876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:10.663510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14843 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.663447: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.663477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:10.663486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:10.663971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.664134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.664199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:10.664210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:10.664778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.668354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.668402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+2018-12-31 20:17:10.671059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.671094: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:10.671105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:10.671563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.675563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.675606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:10.675616: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:10.676211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Graph was finalized.
+2018-12-31 20:17:10.746184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.746229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:10.746240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:10.746708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.756330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.756362: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:10.756371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:10.756736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.756769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:10.756779: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:10.756816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14850 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.757250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.759843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.759882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:10.759892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:10.760345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:10.767361: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:10.767384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:10.767392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+INFO:tensorflow:Graph was finalized.
+2018-12-31 20:17:10.767821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+2018-12-31 20:17:10.782658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:10.782706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-31 20:17:11.073934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:11.073986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:11.074001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:11.074703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:11.266018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:05:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:11.266062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 1
+INFO:tensorflow:Running local_init_op.
+2018-12-31 20:17:11.451948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:11.451992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:11.452007: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:11.452692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Done running local_init_op.
+2018-12-31 20:17:11.613066: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:11.613118: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:11.644335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:11.644386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-12-31 20:17:11.662161: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:11.662198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      1 
+2018-12-31 20:17:11.662212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N 
+2018-12-31 20:17:11.662874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2018-12-31 20:17:11.689085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:03:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:11.689131: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 2
+2018-12-31 20:17:11.767516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0035:04:00.0
+totalMemory: 15.75GiB freeMemory: 15.34GiB
+2018-12-31 20:17:11.767565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 3
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-31 20:17:12.053519: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:12.053564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:12.053581: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:12.054384: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14845 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:12.100734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:12.100788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-12-31 20:17:12.100807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-12-31 20:17:12.101533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14851 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2018-12-31 20:17:12.121317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:12.121353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      2 
+2018-12-31 20:17:12.121366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 2:   N 
+2018-12-31 20:17:12.122035: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14847 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2018-12-31 20:17:12.197172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-31 20:17:12.197216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      3 
+2018-12-31 20:17:12.197232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 3:   N 
+2018-12-31 20:17:12.197907: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14849 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+2018-12-31 20:17:23.876848: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7859 of 20000
+2018-12-31 20:17:23.876839: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7799 of 20000
+2018-12-31 20:17:23.877358: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7646 of 20000
+2018-12-31 20:17:23.877494: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8141 of 20000
+2018-12-31 20:17:23.877719: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7578 of 20000
+2018-12-31 20:17:23.877745: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7855 of 20000
+2018-12-31 20:17:23.877143: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7587 of 20000
+2018-12-31 20:17:23.877726: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 6967 of 20000
+2018-12-31 20:17:23.878348: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8001 of 20000
+2018-12-31 20:17:23.878487: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 8520 of 20000
+2018-12-31 20:17:23.878715: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 6989 of 20000
+2018-12-31 20:17:23.878437: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7703 of 20000
+2018-12-31 20:17:23.878753: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 6631 of 20000
+2018-12-31 20:17:23.879170: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7867 of 20000
+2018-12-31 20:17:23.878924: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7986 of 20000
+2018-12-31 20:17:23.879289: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7804 of 20000
+2018-12-31 20:17:23.879466: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7815 of 20000
+2018-12-31 20:17:23.879904: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7826 of 20000
+2018-12-31 20:17:23.880089: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7840 of 20000
+2018-12-31 20:17:23.879846: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7770 of 20000
+2018-12-31 20:17:23.880108: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7829 of 20000
+2018-12-31 20:17:23.901561: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7987 of 20000
+2018-12-31 20:17:23.901748: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7896 of 20000
+2018-12-31 20:17:23.942137: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7864 of 20000
+2018-12-31 20:17:23.942839: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 7881 of 20000
+2018-12-31 20:17:24.059674: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5189 of 20000
+2018-12-31 20:17:24.062684: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5407 of 20000
+2018-12-31 20:17:24.062866: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5153 of 20000
+2018-12-31 20:17:24.094858: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5294 of 20000
+2018-12-31 20:17:24.095555: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5374 of 20000
+2018-12-31 20:17:24.097682: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5387 of 20000
+2018-12-31 20:17:24.101466: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 5272 of 20000
+2018-12-31 20:17:33.875893: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 14727 of 20000
+2018-12-31 20:17:33.876446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15620 of 20000
+2018-12-31 20:17:33.877254: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16084 of 20000
+2018-12-31 20:17:33.877117: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 13773 of 20000
+2018-12-31 20:17:33.877847: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15380 of 20000
+2018-12-31 20:17:33.877410: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15412 of 20000
+2018-12-31 20:17:33.878012: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15994 of 20000
+2018-12-31 20:17:33.877765: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15907 of 20000
+2018-12-31 20:17:33.877690: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15743 of 20000
+2018-12-31 20:17:33.878515: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15915 of 20000
+2018-12-31 20:17:33.878391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15841 of 20000
+2018-12-31 20:17:33.878764: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16050 of 20000
+2018-12-31 20:17:33.878505: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15932 of 20000
+2018-12-31 20:17:33.878909: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16038 of 20000
+2018-12-31 20:17:33.879633: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16599 of 20000
+2018-12-31 20:17:33.880220: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 13678 of 20000
+2018-12-31 20:17:33.880288: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16876 of 20000
+2018-12-31 20:17:33.881056: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 13644 of 20000
+2018-12-31 20:17:33.881641: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15827 of 20000
+2018-12-31 20:17:33.882363: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15945 of 20000
+2018-12-31 20:17:33.883769: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15962 of 20000
+2018-12-31 20:17:33.901812: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16004 of 20000
+2018-12-31 20:17:33.902568: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15966 of 20000
+2018-12-31 20:17:33.942707: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15931 of 20000
+2018-12-31 20:17:33.945533: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15897 of 20000
+2018-12-31 20:17:34.061616: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10325 of 20000
+2018-12-31 20:17:34.062539: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10400 of 20000
+2018-12-31 20:17:34.065464: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10813 of 20000
+2018-12-31 20:17:34.094118: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10562 of 20000
+2018-12-31 20:17:34.096556: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10626 of 20000
+2018-12-31 20:17:34.096981: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10696 of 20000
+2018-12-31 20:17:34.100093: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 10726 of 20000
+2018-12-31 20:17:37.367774: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:37.990055: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.620526: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.650687: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.742321: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.751403: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.827639: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.886420: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.913413: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.973502: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:38.989858: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.059366: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.064824: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.079070: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.136927: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.168179: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.171540: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.440746: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.493182: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.614019: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:39.694966: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:40.581472: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:43.164560: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:43.756178: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:43.882664: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 19945 of 20000
+2018-12-31 20:17:43.965954: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:44.060965: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15922 of 20000
+2018-12-31 20:17:44.061393: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15905 of 20000
+2018-12-31 20:17:44.062442: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15965 of 20000
+2018-12-31 20:17:44.093875: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16171 of 20000
+2018-12-31 20:17:44.094333: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16532 of 20000
+2018-12-31 20:17:44.096286: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 16377 of 20000
+2018-12-31 20:17:44.096821: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:94] Filling up shuffle buffer (this may take a while): 15924 of 20000
+2018-12-31 20:17:49.244090: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:49.771580: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:50.044043: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:50.095939: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:50.466261: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:50.481068: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+2018-12-31 20:17:50.742468: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:129] Shuffle buffer filled.
+INFO:tensorflow:loss = 2.3041656, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.3041656, global_step = 0
+INFO:tensorflow:loss = 2.3002443, step = 0
+INFO:tensorflow:loss = 2.3044424, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.3002443, global_step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3044424, global_step = 0
+INFO:tensorflow:loss = 2.3054638, step = 0
+INFO:tensorflow:loss = 2.30778, step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3054638, global_step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.30778, global_step = 0
+INFO:tensorflow:loss = 2.3018496, step = 0
+INFO:tensorflow:loss = 2.30336, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3018496, global_step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.30336, global_step = 0
+INFO:tensorflow:loss = 2.303565, step = 0
+INFO:tensorflow:loss = 2.2993298, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.303565, global_step = 0
+INFO:tensorflow:accuracy = 0.15625, loss = 2.2993298, global_step = 0
+INFO:tensorflow:loss = 2.308076, step = 0
+INFO:tensorflow:loss = 2.306563, step = 0
+INFO:tensorflow:loss = 2.308908, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.306563, global_step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.308076, global_step = 0
+INFO:tensorflow:loss = 2.3101935, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.308908, global_step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.3101935, global_step = 0
+INFO:tensorflow:loss = 2.2957907, step = 0
+INFO:tensorflow:loss = 2.3020465, step = 0
+INFO:tensorflow:accuracy = 0.171875, loss = 2.2957907, global_step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3020465, global_step = 0
+INFO:tensorflow:loss = 2.3080974, step = 0
+INFO:tensorflow:loss = 2.3025928, step = 0
+INFO:tensorflow:loss = 2.3010368, step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3025928, global_step = 0
+INFO:tensorflow:loss = 2.3013299, step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3080974, global_step = 0
+INFO:tensorflow:loss = 2.3038352, step = 0
+INFO:tensorflow:accuracy = 0.0625, loss = 2.3038352, global_step = 0
+INFO:tensorflow:loss = 2.3131585, step = 0
+INFO:tensorflow:loss = 2.306623, step = 0
+INFO:tensorflow:accuracy = 0.015625, loss = 2.306623, global_step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3010368, global_step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3013299, global_step = 0
+INFO:tensorflow:accuracy = 0.03125, loss = 2.3131585, global_step = 0
+INFO:tensorflow:loss = 2.3043585, step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3043585, global_step = 0
+INFO:tensorflow:loss = 2.300954, step = 0
+INFO:tensorflow:accuracy = 0.15625, loss = 2.300954, global_step = 0
+INFO:tensorflow:loss = 2.300093, step = 0
+INFO:tensorflow:accuracy = 0.171875, loss = 2.300093, global_step = 0
+INFO:tensorflow:loss = 2.3017316, step = 0
+INFO:tensorflow:loss = 2.306309, step = 0
+INFO:tensorflow:accuracy = 0.078125, loss = 2.306309, global_step = 0
+INFO:tensorflow:accuracy = 0.140625, loss = 2.3017316, global_step = 0
+INFO:tensorflow:loss = 2.304764, step = 0
+INFO:tensorflow:accuracy = 0.046875, loss = 2.304764, global_step = 0
+INFO:tensorflow:loss = 2.3035445, step = 0
+INFO:tensorflow:accuracy = 0.09375, loss = 2.3035445, global_step = 0
+INFO:tensorflow:loss = 2.3000216, step = 0
+INFO:tensorflow:loss = 2.3065217, step = 0
+INFO:tensorflow:accuracy = 0.125, loss = 2.3000216, global_step = 0
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3065217, global_step = 0
+INFO:tensorflow:loss = 2.2967396, step = 0
+INFO:tensorflow:accuracy = 0.140625, loss = 2.2967396, global_step = 0
+INFO:tensorflow:accuracy = 0.0859375, loss = 2.309909, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.09375, loss = 2.3040757, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.0703125, loss = 2.3054023, global_step = 10 (5.093 sec)
+INFO:tensorflow:accuracy = 0.0859375, loss = 2.306345, global_step = 10 (5.093 sec)
+INFO:tensorflow:accuracy = 0.09375, loss = 2.301642, global_step = 10 (5.088 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.29944, global_step = 10 (5.097 sec)
+INFO:tensorflow:accuracy = 0.0703125, loss = 2.3085065, global_step = 10 (5.094 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3026636, global_step = 10 (5.097 sec)
+INFO:tensorflow:accuracy = 0.1015625, loss = 2.307456, global_step = 10 (5.099 sec)
+INFO:tensorflow:accuracy = 0.03125, loss = 2.3003476, global_step = 10 (5.094 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.3049064, global_step = 10 (5.086 sec)
+INFO:tensorflow:accuracy = 0.140625, loss = 2.304402, global_step = 10 (5.086 sec)
+INFO:tensorflow:accuracy = 0.0703125, loss = 2.299615, global_step = 10 (5.097 sec)
+INFO:tensorflow:accuracy = 0.0703125, loss = 2.306067, global_step = 10 (5.094 sec)
+INFO:tensorflow:accuracy = 0.09375, loss = 2.303165, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.1015625, loss = 2.3015056, global_step = 10 (5.097 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.2967641, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3023505, global_step = 10 (5.093 sec)
+INFO:tensorflow:accuracy = 0.046875, loss = 2.3073075, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.0546875, loss = 2.303771, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.2109375, loss = 2.2957735, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.1328125, loss = 2.2995186, global_step = 10 (5.096 sec)
+INFO:tensorflow:accuracy = 0.0859375, loss = 2.3040175, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.3053343, global_step = 10 (5.095 sec)
+INFO:tensorflow:accuracy = 0.140625, loss = 2.2982855, global_step = 10 (5.096 sec)
+INFO:tensorflow:accuracy = 0.1171875, loss = 2.3017213, global_step = 10 (5.081 sec)
+INFO:tensorflow:accuracy = 0.125, loss = 2.3008435, global_step = 10 (5.063 sec)
+INFO:tensorflow:accuracy = 0.109375, loss = 2.3031769, global_step = 10 (5.080 sec)
+INFO:tensorflow:accuracy = 0.140625, loss = 2.3001394, global_step = 10 (5.081 sec)
+INFO:tensorflow:accuracy = 0.09375, loss = 2.3072596, global_step = 10 (5.079 sec)
+INFO:tensorflow:accuracy = 0.1171875, loss = 2.3034458, global_step = 10 (5.079 sec)
+INFO:tensorflow:accuracy = 0.078125, loss = 2.3016973, global_step = 10 (5.081 sec)
+2018-12-31 20:18:02.662190: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.661684: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662109: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662239: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.661882: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.661720: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662133: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662532: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662726: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662888: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.663372: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662942: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662600: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.662913: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.663099: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.663327: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.663237: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.663493: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.663691: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.664455: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.664528: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.665107: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.665428: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.665401: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.666417: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.666796: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.666951: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.668056: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.668622: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.668295: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.669635: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+2018-12-31 20:18:02.675430: E tensorflow/core/kernels/data/cache_dataset_ops.cc:314] The calling iterator did not fully read the dataset we were attempting to cache. In order to avoid unexpected truncation of the sequence, the current [partially cached] sequence will be dropped. This can occur if you have a sequence similar to `dataset.cache().take(k).repeat()`. Instead, swap the order (i.e. `dataset.take(k).cache().repeat()`)
+INFO:tensorflow:Loss for final step: 2.299202.
+ ---------------------- Stopping train for 22 ----------------------
+INFO:tensorflow:Loss for final step: 2.3008912.
+ ---------------------- Stopping train for 24 ----------------------
+INFO:tensorflow:Loss for final step: 2.3070536.
+ ---------------------- Stopping train for 0 ----------------------
+ ---------------------- Training took 61.12947177886963 s ----------------------
+INFO:tensorflow:Loss for final step: 2.3048263.
+ ---------------------- Stopping train for 3 ----------------------
+INFO:tensorflow:Loss for final step: 2.3005228.
+ ---------------------- Stopping train for 18 ----------------------
+INFO:tensorflow:Loss for final step: 2.3019428.
+ ---------------------- Stopping train for 10 ----------------------
+INFO:tensorflow:Loss for final step: 2.3076785.
+ ---------------------- Stopping train for 21 ----------------------
+INFO:tensorflow:Loss for final step: 2.3056083.
+ ---------------------- Stopping train for 17 ----------------------
+INFO:tensorflow:Loss for final step: 2.3010097.
+ ---------------------- Stopping train for 25 ----------------------
+INFO:tensorflow:Loss for final step: 2.302153.
+ ---------------------- Stopping train for 7 ----------------------
+INFO:tensorflow:Loss for final step: 2.2968352.
+ ---------------------- Stopping train for 1 ----------------------
+INFO:tensorflow:Loss for final step: 2.296702.
+ ---------------------- Stopping train for 23 ----------------------
+INFO:tensorflow:Loss for final step: 2.3042135.
+ ---------------------- Stopping train for 20 ----------------------
+INFO:tensorflow:Loss for final step: 2.3038478.
+ ---------------------- Stopping train for 2 ----------------------
+INFO:tensorflow:Loss for final step: 2.3088408.
+ ---------------------- Stopping train for 9 ----------------------
+INFO:tensorflow:Loss for final step: 2.3035364.
+ ---------------------- Stopping train for 30 ----------------------
+INFO:tensorflow:Loss for final step: 2.3083653.
+ ---------------------- Stopping train for 27 ----------------------
+INFO:tensorflow:Loss for final step: 2.3046603.
+ ---------------------- Stopping train for 26 ----------------------
+INFO:tensorflow:Loss for final step: 2.3002105.
+ ---------------------- Stopping train for 5 ----------------------
+INFO:tensorflow:Loss for final step: 2.2983136.
+ ---------------------- Stopping train for 16 ----------------------
+INFO:tensorflow:Loss for final step: 2.3075385.
+ ---------------------- Stopping train for 13 ----------------------
+INFO:tensorflow:Loss for final step: 2.3014984.
+ ---------------------- Stopping train for 19 ----------------------
+INFO:tensorflow:Loss for final step: 2.302671.
+ ---------------------- Stopping train for 31 ----------------------
+INFO:tensorflow:Loss for final step: 2.2997932.
+ ---------------------- Stopping train for 12 ----------------------
+INFO:tensorflow:Loss for final step: 2.297295.
+ ---------------------- Stopping train for 14 ----------------------
+INFO:tensorflow:Loss for final step: 2.3068655.
+ ---------------------- Stopping train for 8 ----------------------
+INFO:tensorflow:Loss for final step: 2.2963.
+INFO:tensorflow:Loss for final step: 2.3032808.
+ ---------------------- Stopping train for 4 ----------------------
+ ---------------------- Stopping train for 6 ----------------------
+INFO:tensorflow:Loss for final step: 2.3061273.
+ ---------------------- Stopping train for 11 ----------------------
+INFO:tensorflow:Loss for final step: 2.3006234.
+ ---------------------- Stopping train for 29 ----------------------
+INFO:tensorflow:Loss for final step: 2.306538.
+ ---------------------- Stopping train for 28 ----------------------
+INFO:tensorflow:Loss for final step: 2.302243.
+ ---------------------- Stopping train for 15 ----------------------
